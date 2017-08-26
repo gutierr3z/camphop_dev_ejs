@@ -1,7 +1,6 @@
 ( function( exports ) {
 
-    // logic here
-
+    // HOME
     exports.home = function() {
 
         var xx = 'hello there home'
