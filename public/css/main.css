@@ -1,0 +1,30 @@
+
+.red {
+    border: 1px solid red;
+}
+
+.blue {
+    border: 1px solid blue;
+}
+
+.yellow {
+    border: 1px solid yellow;
+}
+
+.orange {
+    border: 1px solid orange;
+}
+
+.green {
+    border: 1px solid green;
+}
+
+.purple {
+    border: 1px solid purple;
+}
+
+
+
+body {
+    background-color: yellow;
+}
