@@ -23,8 +23,258 @@
     border: 1px solid purple;
 }
 
-
+html {
+    font-size: 100%;
+}
 
 body {
-    background-color: yellow;
+    /* background-color: yellow; */
+}
+
+body {
+    padding: 0px;
+    margin: 0px;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 0.75em;
+    font-weight: 300;
+    font-style: normal;
+    font-variant: normal;
+    line-height: 1.6em;
+    -webkit-font-smoothing: antialiased;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    letter-spacing: -1px;
+}
+
+
+
+
+
+
+.oo-header {
+	border: 0px;
+	background-color: #e8e8e8;
+}
+
+a.oo-brand:visited,
+a.oo-brand:hover,
+a.oo-brand {
+	color: #f00;
+	background: url( '../images/logo.svg' );
+    /* background-size: 72px 18px; */
+    background-size: 90%;
+	background-repeat: no-repeat;
+	background-position: 0 7px;
+	padding-left: 113px;
+	padding-right: 0px;
+	width: 93px;
+	overflow: hidden;
+    margin-left: 15px;
+}
+
+#oo-the-nav {
+	background-color: #6b6757;
+	opacity: 0.9;
+    filter: alpha(opacity=90); /* For IE8 and earlier */
+}
+
+#oo-nav a.on {
+	color: red;
+}
+
+.oo-header .oo-center-content {
+	background-color: #f8f8f8;	
+	height: 100%;
+}
+
+.oo-center-content {
+    padding-right: 0px;
+    padding-left: 0px;
+}
+
+
+
+
+/* bootstrap overwrites */
+.navbar {
+	border-radius: 0px;
+	border: 0px;
+	margin-bottom: 0px;
+}
+
+.navbar-default .navbar-nav > li > a {
+	color: #fff;
+	font-size: 1.125em;
+}
+
+.navbar-nav {
+	margin: 0px;
+}
+
+.navbar-nav > li {
+	border-bottom: 1px solid #8d8877;
+}
+
+.navbar-nav > :last-child {
+	border-bottom: 0px;
+}
+
+.navbar-nav > li > a {
+	padding-left: 75px;
+	padding-top: 11px;
+	padding-bottom: 11px;
+}
+
+.navbar-default .navbar-nav > li > a:hover {
+	color: #000;
+	font-size: 1.125em;
+}
+
+.navbar-default .navbar-collapse, 
+.navbar-default .navbar-form {
+    border: 0px;
+}
+
+.navbar-toggle {
+	border-radius: 0px;
+	border: 0px;
+}
+
+.navbar-default .navbar-toggle:hover, 
+.navbar-default .navbar-toggle:focus {
+	background-color: #fff;
+}
+
+.navbar-default .navbar-toggle {
+	background: #fff;
+	margin: 0px;
+	padding: 0px;
+	height: 55px;
+	width: 55px;
+	text-align: center;
+}
+
+.navbar-default .navbar-toggle span {
+	display: block;
+	width: 24px;
+	height: 4px;
+	margin-left: 16px;
+}
+
+.navbar-default .navbar-toggle .icon-bar {
+	background-color: #dcdad4;
+}
+
+
+
+
+@media ( min-width: 768px ) { 
+
+body {
+    /* background-color: orange; */
+}
+
+/* LOGO */
+a.oo-brand:visited, a.oo-brand:hover, a.oo-brand {
+    background-position: 15px 11px;
+}
+
+a.oo-brand:visited, a.oo-brand:hover, a.oo-brand {
+    color: #f00;
+    background: url(../images/logo.svg);
+    /* background-size: 93px 23px; */
+    background-size: 62%;
+    background-repeat: no-repeat;
+    background-position: 0 2px;
+    padding-left: 200px;
+    padding-right: 0px;
+    width: 93px;
+    overflow: hidden;
+    /* margin-left: 15px; */
+}
+
+.navbar>.container-fluid .navbar-brand {
+    margin-left: 0px;
+}
+
+.navbar>.container-fluid .navbar-brand {
+    /* padding-left: 0px; */
+    /* border: 1px solid red; */
+    margin-left: 0px;
+}
+
+.navbar-brand {
+    float: left;
+    height: 50px;
+    padding: 15px 15px;
+    font-size: 18px;
+    line-height: 20px;
+}
+
+
+
+
+
+
+/* LAYOUT */
+.oo-header .oo-center-content {
+    height: 70px;
+    padding-top: 8px;
+}
+
+.oo-center-content {
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+#oo-the-nav {
+    background-color: transparent;
+    float: right;
+}
+
+.navbar-fixed-bottom .navbar-collapse, .navbar-fixed-top .navbar-collapse, .navbar-static-top .navbar-collapse {
+    padding-right: 0;
+    padding-left: 0;
+}
+
+
+
+
+.navbar-collapse.collapse {
+    display: block!important;
+    height: auto!important;
+    padding-bottom: 0;
+    overflow: visible!important;
+}
+
+/* LIs */
+#oo-nav {
+    margin-top: 5px;
+}
+
+.navbar-nav > li {
+    border: 0px;
+}
+
+.navbar-default .navbar-nav > li > a {
+    color: #635e52;
+    color: #000;
+}
+
+.navbar-default .navbar-nav > li > a {
+    /* color: #fff; */
+    font-size: 1.125em;
+}
+
+.navbar-nav > li > a {
+    padding-left: 7px;
+}
+
+.navbar-nav > li > a {
+    /* padding-left: 75px; */
+    padding-top: 11px;
+    padding-bottom: 11px;
+}
+
 }
