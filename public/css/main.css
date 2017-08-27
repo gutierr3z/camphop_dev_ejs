@@ -11,19 +11,19 @@
 
     col-xs :    Tiny Devices   : below 768px    ( Mobile menu appearse )  
                 Yellow, Orange
-                horizontal alignment in Red. >= 1200px, below 1200px they stack vertically
+                horizontal alignment in Red, Blue, Green, Orange, Yellow. < 768px, no vertically stacking.
 
     col-sm :    Small Devices  : equal & above 768px      
                 Green
-                horizontal alignment in Red, Blue. >= 992px, below 992px they stack vertically
+                horizontal alignment in Red, Blue, Green. >= 768px, below 768px they stack vertically
 
     col-md :    Medium Devices : equal & above 992px      
                 Blue
-                horizontal alignment in Red, Blue, Green. >= 768px, below 768px they stack vertically
+                horizontal alignment in Red, Blue. >= 992px, below 992px they stack vertically
 
     col-lg :    Large Devices  : equal & above 1200px     
                 Red
-                horizontal alignment in Red, Blue, Green, Orange, Yellow. < 768px, no vertically stacking.
+                horizontal alignment in Red. >= 1200px, below 1200px they stack vertically
 
 	MEASUREMENTS:
 
@@ -41,16 +41,16 @@
 	21px = 1.3125em
 	22px = 1.375em
 	23px = 1.4375em
-    24px = 1.5em
-    25px = 1.563em
-    26px = 1.625em
-    27px = 1.688em
-    28px = 1.750em
-    29px = 1.813em
-    30px = 1.875em
-    31px = 1.938em
-    32px = 2em
-    33px = 2.0625em
+	24px = 1.5em
+	25px = 1.563em
+	26px = 1.625em
+	27px = 1.688em
+	28px = 1.750em
+	29px = 1.813em
+	30px = 1.875em
+	31px = 1.938em
+	32px = 2em
+	33px = 2.0625em
 	34px = 2.125em
 	35px = 2.1875em
 	36px = 2.25em
