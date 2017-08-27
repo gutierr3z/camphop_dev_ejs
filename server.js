@@ -1,44 +1,52 @@
 var express     = require( 'express' );
+var pgp         = require( 'pg-promise' )(/*options*/)
 var path        = require ( 'path' );
+
+// var db = pgp( 'postgres://postgres:oova@localhost:5432/camping' );
+
 var myApp       = require ( './myapp' );
+
+myApp.db = pgp( 'postgres://postgres:oova@localhost:5432/camping' );
+// myApp.pgp = pgp;
+
+
 
 var Server = function() {
 
-    var self = this;
-
-    self.setupVariables = function() {
-        self.port = process.env.PORT || 8080;
+    this.setupVariables = function() {
+        this.port = process.env.PORT || 8080;
     };
 
-    self.initializeServer = function() {
+    this.initializeServer = function() {
 
-        self.app = express();
+        this.app    = express();
 
-        self.app.set( 'views', __dirname + '/views' ); // optinal since express defaults to CWD/views 
-        self.app.set( 'view engine', 'ejs' );
+        this.app.set( 'views', __dirname + '/views' ); // optional since express defaults to CWD/views 
+        this.app.set( 'view engine', 'ejs' );
 
         // landing page
-        self.app.get( '/', function( req, res ) {
-            // myApp.home();
+        this.app.get( '/', function( req, res ) {
+            console.log( 'len', myApp.home().length );
             res.render( 'pages/index', {
-                test: myApp.home()
+                trips: myApp.home(),
+                test: 'hello'
             });
         });
 
         // Serve public directories
-        self.app.use( express.static( path.join( __dirname, 'public' ) ) );
-        self.app.use( express.static( path.join( __dirname, 'lib' ) ) );
+        this.app.use( express.static( path.join( __dirname, 'public' ) ) );
+        this.app.use( express.static( path.join( __dirname, 'lib' ) ) );
     };
 
-    self.initialize = function() {
-        self.setupVariables();
+    this.initialize = function() {
+        this.setupVariables();
         // Create express server and routes
-        self.initializeServer();
+        this.initializeServer();
     };
 
-    self.start = function() {
-        self.app.listen( self.port, function() {
-            console.log( 'Node Server started on...', Date( Date.now() ), self.port );
+    this.start = function() {
+        this.app.listen( this.port, function() {
+            console.log( 'Node Server started on...', Date( Date.now() ), this.port );
         });
     };
 };

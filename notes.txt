@@ -1,0 +1,35 @@
+<!-- <table border="1">
+                <tr>
+                    <th>trip Num</th>
+                    <th>Camp</th>
+                    <th>Arrival</th>
+                    <th>Departure</th>
+                    <th>Site</th>
+                    <th>LAT</th>
+                    <th>LON</th>
+                    <th>Memo</th>
+                </tr>
+                <% trips.forEach( function( trip ) { %>
+                <tr>
+                    <td><%= trip.tripNumber %></td>
+                    <td><%= trip.campgroundName %></td>
+                    <td><%= trip.arrivalDate %></td>
+                    <td><%= trip.departureDate %></td>
+                    <td><%= trip.siteNumber %></td>
+                    <td><%= trip.latitude %></td>
+                    <td><%= trip.longitude %></td>
+                    <td><%= trip.memo %></td>
+                </tr>
+                <% }); %>
+            </table> -->
+
+//---------------------
+// var db = pgp( 'postgres://postgres:oova@localhost:5432/camping' );
+// var trips = [];
+// var sql = 'SELECT * FROM tbl_trips AS trips JOIN tbl_campgrounds AS camp ON trips.fld_campground_id::int = camp.id';
+// db.any( sql, [true] ).then( function( data ) {
+//     console.log( 'success', data.length );
+// }).catch( function( error ) {
+//     console.log( error );
+// });
+//---------------------

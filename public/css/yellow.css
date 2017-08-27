@@ -164,7 +164,6 @@ a.oo-brand:hover,
 a.oo-brand {
     color: #f00;
     background: url( '../images/logo.svg' );
-    /* background-size: 72px 18px; */
     background-size: 88%;
     background-repeat: no-repeat;
     background-position: 0 7px;
@@ -199,7 +198,6 @@ START : Content
 }
 
 .thumbnail {
-    /* border: 1px solid blue; */
     border-radius: 0px;
     padding: 0px;
     height: 8em;
@@ -210,12 +208,10 @@ START : Content
     padding-right: 1px;
     padding-left: 1px; 
     height: 9em;
-    /* border: 1px solid red; */
 }
 
 .thumbnail .caption {
     color: #fff;
-    /* border: 1px solid red; */
     position: absolute;
     bottom: 0px;
     width: 100%;
@@ -226,7 +222,6 @@ START : Content
 .thumbnail .caption h3 {
     margin: 0px;
     text-shadow: 1px 1px 2px #000;
-    /* font-weight: bold; */
     font-size: 1.5em;
 }
 
