@@ -108,7 +108,8 @@ h6 {
 
 .oo-header {
 	border: 0px;
-	/* background-color: #e8e8e8; */
+    /* background-color: #e8e8e8; */
+    min-width: 320px;
 }
 
 a.oo-brand:visited,
@@ -221,42 +222,72 @@ a.oo-brand {
 	background-color: #dcdad4;
 }
 
+
+
+
+.oo-content-wrapper .col-md-12 {
+    padding-left: 3px;
+    padding-right: 3px;
+}
+
+.thumbnail {
+    /* border: 1px solid blue; */
+    border-radius: 0px;
+    padding: 0px;
+    height: 8em;
+}
+
+.oo-thumbs {
+    min-width: 314px;
+}
+
+.oo-thumbs .col-xs-4 {
+    padding-right: 1px;
+    padding-left: 1px; 
+    height: 9em;
+    /* border: 1px solid red; */
+}
+
 #oo-thumb-1 {
     background: url( ../images/thumb_1.jpg );
     background-repeat: no-repeat;
-    background-position: -134px 0px;
-    background-size: 145%;
+    background-position: -40px 0px;
+    background-size: 170%;
 }
 
 #oo-thumb-2 {
     background: url( ../images/thumb_2.jpg );
     background-repeat: no-repeat;
     background-position: 0 0px;
-    background-size: 120%;
+    background-size: 130%;
 }
 
 #oo-thumb-3 {
     background: url( ../images/thumb_3.jpg );
     background-repeat: no-repeat;
     background-position: 0 0px;
-    background-size: 150%;
+    background-size: 170%;
 }
 
 #oo-thumb-4 {
     background: url( ../images/thumb_4.jpg );
     background-repeat: no-repeat;
     background-position: 0 0px;
-    background-size: 150%;
+    background-size: 170%;
 }
 
 #oo-thumb-5 {
     background: url( ../images/thumb_5.jpg );
     background-repeat: no-repeat;
-    background-position: -81px 0px;
+    background-position: -30px 0px;
     background-size: 150%;
 }
 
-
+footer {
+    min-height: 150px;
+    background-color: #e8e8e8;
+    margin-top: 100px;
+}
 
 
 @media ( min-width: 768px ) { 
@@ -371,12 +402,13 @@ a.oo-brand {
         /* border: 2px solid red; */
         border-radius: 0px;
         padding: 0px;
-        min-height: 300px;
+        min-height: 275px;
     }
 
-    .oo-thumbs .col-sm-4 {
+    .oo-thumbs .col-xs-4 {
         padding-right: 4px;
         padding-left: 4px;
+        min-height: 330px;
     }
 
 }
