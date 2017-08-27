@@ -1,0 +1,316 @@
+/*
+============================================================
+START : General Rules 
+*/
+
+/* Overwrites : -------------------- */
+
+
+
+/* /Overwrites : -------------------- */
+
+html {
+    font-size: 16px;
+}
+
+body {
+    background-color: yellow;
+}
+
+body {
+    padding: 0px;
+    margin: 0px;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 300;
+    font-style: normal;
+    font-variant: normal;
+    line-height: 1.6em;
+    -webkit-font-smoothing: antialiased;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    letter-spacing: -1px;
+    font-family: 'Amatic SC', cursive;
+}
+
+h1 {
+    font-size: 2.750em;
+}
+
+h2 {
+    font-size: 2.688em;
+}
+
+h3 {
+    font-size: 2.625em;
+}
+
+h4 {
+    font-size: 2.563em;
+}
+
+h5 {
+    font-size: 2.5em;
+}
+
+h6 {
+    font-size: 2.4375em;
+}
+
+/*
+END : General Rules 
+============================================================
+*/
+/*
+============================================================
+START : Header 
+*/
+
+/* Overwrites : -------------------- */
+
+.navbar {
+	border-radius: 0px;
+	border: 0px;
+	margin-bottom: 0px;
+}
+
+.navbar-default .navbar-nav > li > a {
+	color: #000;
+	font-size: 1em;
+}
+
+.navbar-nav {
+	margin: 0px;
+}
+
+.navbar-nav > li {
+    border: 0px;
+}
+
+.navbar-nav > :last-child {
+	border-bottom: 0px;
+}
+
+.navbar-nav > li > a {
+	padding-left: 75px;
+	padding-top: 11px;
+	padding-bottom: 11px;
+}
+
+.navbar-default .navbar-nav > li > a:hover {
+	color: #fff;
+	font-size: 1.125em;
+}
+
+.navbar-default .navbar-collapse, 
+.navbar-default .navbar-form {
+    border: 0px;
+}
+
+.navbar-toggle {
+	border-radius: 0px;
+	border: 0px;
+}
+
+.navbar-default .navbar-toggle:hover, 
+.navbar-default .navbar-toggle:focus {
+	background-color: #fff;
+}
+
+.navbar-default .navbar-toggle {
+	background: #fff;
+	margin: 0px;
+	padding: 0px;
+	height: 55px;
+	width: 55px;
+	text-align: center;
+}
+
+.navbar-default .navbar-toggle span {
+	display: block;
+	width: 24px;
+	height: 4px;
+	margin-left: 16px;
+}
+
+.navbar-default .navbar-toggle .icon-bar {
+	background-color: #dcdad4;
+}
+
+/* /Overwrites : -------------------- */
+
+/* Navigation : -------------------- */
+
+#oo-the-nav {
+    background-color: #ffcc00;
+	opacity: 0.9;
+    filter: alpha( opacity=90 ); /* For IE8 and earlier */
+}
+
+#oo-nav a.on {
+	color: red;
+}
+
+/* /Navigation : -------------------- */
+
+.oo-header {
+	border: 0px;
+    /* background-color: #e8e8e8; */
+    min-width: 320px;
+}
+
+a.oo-brand:visited,
+a.oo-brand:hover,
+a.oo-brand {
+	color: #f00;
+	background: url( '../images/logo.svg' );
+    /* background-size: 72px 18px; */
+    background-size: 88%;
+	background-repeat: no-repeat;
+	background-position: 0 7px;
+	padding-left: 113px;
+	padding-right: 0px;
+	width: 93px;
+	overflow: hidden;
+    margin-left: 15px;
+}
+
+.oo-header .oo-center-content {
+    background-color: #f8f8f8;
+    height: 100%;
+    padding-right: 0px;
+    padding-left: 0px;
+}
+
+/*
+END : Header 
+============================================================
+*/
+/*
+============================================================
+START : Content 
+*/
+
+/* Overwrites : -------------------- */
+
+.oo-content-wrapper .col-md-12 {
+    padding-left: 3px;
+    padding-right: 3px;
+}
+
+.thumbnail {
+    /* border: 1px solid blue; */
+    border-radius: 0px;
+    padding: 0px;
+    height: 8em;
+    position: relative;
+}
+
+.oo-thumbs .col-xs-4 {
+    padding-right: 1px;
+    padding-left: 1px; 
+    height: 9em;
+    /* border: 1px solid red; */
+}
+
+.thumbnail .caption {
+    color: #fff;
+    /* border: 1px solid red; */
+    position: absolute;
+    bottom: 0px;
+    width: 100%;
+    height: 30%;
+    padding: 3px;
+}
+
+.thumbnail .caption h3 {
+    margin: 0px;
+    text-shadow: 1px 1px 2px #000;
+    /* font-weight: bold; */
+    font-size: 1.5em;
+}
+
+/* /Overwrites : -------------------- */
+
+.oo-trip-number {
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    background-color: #ea0000;
+    width: 15px;
+    height: 15px;
+    text-align: center;
+}
+.oo-trip-number h5 {
+    margin: 0px;
+    margin-top: 3px;
+    font-size: 0.6875em;
+    line-height: 1em;
+    font-weight: bold;
+    color: #fff;
+}
+
+.oo-thumbs {
+    min-width: 314px;
+}
+
+#oo-thumb-1 {
+    background: url( ../images/thumb_1.jpg );
+    background-repeat: no-repeat;
+    background-position: -40px 0px;
+    background-size: 170%;
+}
+
+#oo-thumb-2 {
+    background: url( ../images/thumb_2.jpg );
+    background-repeat: no-repeat;
+    background-position: 0 0px;
+    background-size: 130%;
+}
+
+#oo-thumb-3 {
+    background: url( ../images/thumb_3.jpg );
+    background-repeat: no-repeat;
+    background-position: 0 0px;
+    background-size: 170%;
+}
+
+#oo-thumb-4 {
+    background: url( ../images/thumb_4.jpg );
+    background-repeat: no-repeat;
+    background-position: 0 0px;
+    background-size: 170%;
+}
+
+#oo-thumb-5 {
+    background: url( ../images/thumb_5.jpg );
+    background-repeat: no-repeat;
+    background-position: -30px 0px;
+    background-size: 150%;
+}
+
+/*
+END : Content 
+============================================================
+*/
+/*
+============================================================
+START : Footer 
+*/
+
+/* Overwrites : -------------------- */
+
+
+
+/* /Overwrites : -------------------- */
+
+footer {
+    min-height: 150px;
+    background-color: #e8e8e8;
+    margin-top: 100px;
+}
+
+/*
+END : Footer 
+============================================================
+*/
