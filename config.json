@@ -1,0 +1,26 @@
+{
+    "db": {
+        "username": "xxxx",
+        "password": "xxxx"
+    },
+    "server": {
+        "port": "xxx"
+    },
+    "app": {
+        "context": "/"
+    }
+}
+
+{
+    "server": {
+        "port": 3002
+    },
+    "tomcatProxy": {
+        "context": "/",
+        "address": "http://localhost:8080"
+    },
+    "static": {
+        "context": "/static",
+        "directory": "public"
+    }
+}

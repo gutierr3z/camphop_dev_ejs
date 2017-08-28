@@ -2,23 +2,26 @@ var express     = require( 'express' );
 var pgp         = require( 'pg-promise' )(/*options*/)
 var path        = require ( 'path' );
 
-// var db = pgp( 'postgres://postgres:oova@localhost:5432/camping' );
+const myApp     = require ( './myapp' );
 
-var myApp       = require ( './myapp' );
+// const config = require( './config.json' );
 
-myApp.db = pgp( 'postgres://postgres:oova@localhost:5432/camping' );
+// console.log( 'config=%o', config );
+
+myApp.db = pgp( 'postgres://postgres:oova@localhost:5433/camping' );
 // myApp.pgp = pgp;
 
 
 
-var Server = function() {
+const Server = function() {
 
     this.setupVariables = function() {
         this.port = process.env.PORT || 8080;
     };
 
     this.initializeServer = function() {
-
+        
+        var trips = myApp.home();
         this.app    = express();
 
         this.app.set( 'views', __dirname + '/views' ); // optional since express defaults to CWD/views 
@@ -26,9 +29,12 @@ var Server = function() {
 
         // landing page
         this.app.get( '/', function( req, res ) {
-            console.log( 'len', myApp.home().length );
+
+            // var trips = myApp.home();
+
+            // console.log( 'lenxxxxx', typeof trips );
             res.render( 'pages/index', {
-                trips: myApp.home(),
+                trips: trips,
                 test: 'hello'
             });
         });

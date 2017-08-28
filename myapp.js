@@ -1,20 +1,15 @@
 ( function( exports ) {
 
-    
+    exports.trips = [];
+    exports.name = 'juan';
+    exports.sql = 'SELECT * FROM tbl_trips AS trips JOIN tbl_campgrounds AS camp ON trips.fld_campground_id::int = camp.id';
 
     // HOME
     exports.home = function() {
 
-        
-
-        this.trips = [];
-
-        this.sql = 'SELECT * FROM tbl_trips AS trips JOIN tbl_campgrounds AS camp ON trips.fld_campground_id::int = camp.id';
-
         this.db.any( this.sql, [true] ).then( function( data ) {
 
             // success;
-            console.log( 'success', data.length );
         
             for (var i = 0; i < data.length; i++) {
 
@@ -28,7 +23,7 @@
                 var search_keywords = data[i].fld_search_keywords;
                 var memo = data[i].fld_memo;
         
-                this.trips[i] = { 
+                exports.trips[i] = { 
                     tripNumber: trip_number,
                     campgroundName: campground_name,
                     arrivalDate: arrival_date,
@@ -39,8 +34,6 @@
                     searchKeywords: search_keywords,
                     memo: memo
                 };
-
-                // console.log( 'xx:', trips[i] );
             }
 
         }).catch( function( error ) {
@@ -48,7 +41,7 @@
             console.log( error );
         });
 
-        return this.trips;
+        return exports.trips;
     };
     // /HOME
 
