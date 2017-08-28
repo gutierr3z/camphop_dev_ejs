@@ -16,6 +16,7 @@ myApp.db = pgp( 'postgres://postgres:oova@localhost:5433/camping' );
 const Server = function() {
 
     this.setupVariables = function() {
+
         this.port = process.env.PORT || 8080;
     };
 
@@ -42,13 +43,17 @@ const Server = function() {
     };
 
     this.initialize = function() {
+
         this.setupVariables();
+        
         // Create express server and routes
         this.initializeServer();
     };
 
     this.start = function() {
+
         this.app.listen( this.port, function() {
+
             console.log( 'Node Server started on...', Date( Date.now() ), this.port );
         });
     };
