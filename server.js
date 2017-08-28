@@ -20,8 +20,8 @@ const Server = function() {
     };
 
     this.initializeServer = function() {
-        
-        var trips = myApp.home();
+
+        var trips = myApp.listOfTrips();
         this.app    = express();
 
         this.app.set( 'views', __dirname + '/views' ); // optional since express defaults to CWD/views 
@@ -30,9 +30,6 @@ const Server = function() {
         // landing page
         this.app.get( '/', function( req, res ) {
 
-            // var trips = myApp.home();
-
-            // console.log( 'lenxxxxx', typeof trips );
             res.render( 'pages/index', {
                 trips: trips,
                 test: 'hello'

@@ -5,7 +5,7 @@
     exports.sql = 'SELECT * FROM tbl_trips AS trips JOIN tbl_campgrounds AS camp ON trips.fld_campground_id::int = camp.id';
 
     // HOME
-    exports.home = function() {
+    exports.listOfTrips = function() {
 
         this.db.any( this.sql, [true] ).then( function( data ) {
 
