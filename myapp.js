@@ -2,7 +2,7 @@
 
     exports.trips = [];
     exports.name = 'juan';
-    exports.sql = 'SELECT * FROM tbl_trips AS trips JOIN tbl_campgrounds AS camp ON trips.fld_campground_id::int = camp.id';
+    exports.sql = 'SELECT * FROM tbl_trips AS trips JOIN tbl_campgrounds AS camp ON trips.fld_campground_id::int = camp.id ORDER BY trips.id DESC';
 
     // HOME
     exports.listOfTrips = function() {
