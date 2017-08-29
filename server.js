@@ -8,7 +8,7 @@ const myApp     = require ( './myapp' );
 
 // console.log( 'config=%o', config );
 
-myApp.db = pgp( 'postgres://postgres:oova@localhost:5433/camping' );
+myApp.db = pgp( 'postgres://postgres:oova@localhost:5432/camping' );
 // myApp.pgp = pgp;
 
 
