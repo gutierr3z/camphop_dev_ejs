@@ -120,9 +120,11 @@ START : Content
 /* Overwrites : -------------------- */
 
 .thumbnail {
-    border-radius: 0px;
-    padding: 0px;
     min-height: 275px;
+
+    background-repeat: no-repeat;
+    background-position: 0px 0px;
+    background-size: 120%;
 }
 
 .thumbnail .caption {

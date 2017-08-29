@@ -49,7 +49,11 @@ START : Content
 
 /* Overwrites : -------------------- */
 
-
+.thumbnail {
+    background-repeat: no-repeat;
+    background-position: 0px 0px;
+    background-size: 100%;
+}
 
 /* /Overwrites : -------------------- */
 
