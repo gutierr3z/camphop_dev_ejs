@@ -141,6 +141,10 @@ START : Content
     font-weight: bold;
 }
 
+.thumbnail .caption p {
+    font-size: 1em;
+}
+
 /* /Overwrites : -------------------- */
 
 /* Layout */
