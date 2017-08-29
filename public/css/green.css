@@ -132,14 +132,13 @@ START : Content
     position: absolute;
     bottom: 0px;
     width: 100%;
-    height: 30%;
     padding: 10px;
 }
 
 .thumbnail .caption h3 {
     margin: 0px;
-    text-shadow: 1px 1px 2px #000;
-    font-size: 2.625em;
+    font-size: 2em;
+    font-weight: bold;
 }
 
 /* /Overwrites : -------------------- */
