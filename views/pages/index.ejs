@@ -12,75 +12,7 @@
             <!-- END : header -->
 
             <!-- START : content -->
-            <div class="container-fluid">
-                <div class="row">
-                    <div class="col-sm-12 oo-content-wrapper">
-                        <div class="row">
-                            <div class="col-md-12">
-                                <!-- <h1>Camping Trips</h1> -->
-                                <br>
-
-                                <div class="container-fluid oo-thumbs">
-                                    <div class="row">
-
-                                        <div class="col-xs-4">
-                                            <div class="thumbnail" id="oo-thumb-1">
-                                                <div class="oo-trip-number"><h5>1</h5></div>
-                                                <div class="caption">
-                                                    <h3>Macedonia Brook</h3>
-                                                    <p>...</p>
-                                                </div>
-                                            </div>
-                                        </div>
-
-                                        <div class="col-xs-4">
-                                            <div class="thumbnail" id="oo-thumb-2">
-                                                <div class="oo-trip-number"><h5>2</h5></div>
-                                                <div class="caption">
-                                                    <h3>Henderson Beach</h3>
-                                                    <p>...</p>
-                                                </div>
-                                            </div>
-                                        </div>
-
-                                        <div class="col-xs-4">
-                                            <div class="thumbnail" id="oo-thumb-3">
-                                                <div class="oo-trip-number"><h5>3</h5></div>
-                                                <div class="caption">
-                                                    <h3>Putnam Pond</h3>
-                                                    <p>...</p>
-                                                </div>
-                                            </div>
-                                        </div>
-
-                                        <div class="col-xs-4">
-                                            <div class="thumbnail" id="oo-thumb-4">
-                                                <div class="oo-trip-number"><h5>4</h5></div>
-                                                <div class="caption">
-                                                    <h3>Ricketts Glen</h3>
-                                                    <p>...</p>
-                                                </div>
-                                            </div>
-                                        </div>
-
-                                        <div class="col-xs-4">
-                                            <div class="thumbnail" id="oo-thumb-5">
-                                                <div class="oo-trip-number"><h5>5</h5></div>
-                                                <div class="caption">
-                                                    <h3>Fahnestock</h3>
-                                                    <p>...</p>
-                                                </div>
-                                            </div>
-                                        </div>
-                                            
-                                    </div>
-                                </div>
-
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
+            
             <!-- END : content -->
 <br><br><br>
             <div class="container">
@@ -93,7 +25,11 @@
 
                                         <% trips.forEach( function( trip ) { %>
                                         <div class="col-xs-4">
-                                            <div class="thumbnail" id="oo-thumb-1">
+                                            <div class="thumbnail" id="oo-thumb-1xxx" style="
+                                                background-image: url( 'images/cover_pic_<%= trip.tripNumber %>.jpg' );
+                                                background-repeat: no-repeat;
+                                                background-size: 110%;
+                                                background-position: 0px -30px;";>
                                                 <div class="oo-trip-number"><h5><%= trip.tripNumber %></h5></div>
                                                 <div class="caption">
                                                     <h3><%= trip.campgroundName %></h3>
@@ -110,37 +46,7 @@
                     </div>
                 </div>
             </div>
-<br><br><br>
-            <div class="container">
-                <div class="row">
-                    <div class="col-md-12">
-                        <table border="1">
-                                <tr>
-                                    <th>trip Num</th>
-                                    <th>Camp</th>
-                                    <th>Arrival</th>
-                                    <th>Departure</th>
-                                    <th>Site</th>
-                                    <th>LAT</th>
-                                    <th>LON</th>
-                                    <th>Memo</th>
-                                </tr>
-                                <% trips.forEach( function( trip ) { %>
-                                <tr>
-                                    <td><%= trip.tripNumber %></td>
-                                    <td><%= trip.campgroundName %></td>
-                                    <td><%= trip.arrivalDate %></td>
-                                    <td><%= trip.departureDate %></td>
-                                    <td><%= trip.siteNumber %></td>
-                                    <td><%= trip.latitude %></td>
-                                    <td><%= trip.longitude %></td>
-                                    <td><%= trip.memo %></td>
-                                </tr>
-                                <% }); %>
-                            </table>
-                    </div>
-                </div>
-            </div>
+
             <!-- START : footer -->
             <% include ../partials/footer %>
             <!-- END : footer -->
