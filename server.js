@@ -36,6 +36,13 @@ const Server = function() {
             });
         });
 
+        this.app.get( '/trip/:tripId', function( req, res ) {
+
+            res.render( 'pages/trip_page', {
+                tripId: req.params.sectionId
+            });
+        });
+
         // Serve public directories
         this.app.use( express.static( path.join( __dirname, 'public' ) ) );
         this.app.use( express.static( path.join( __dirname, 'lib' ) ) );
