@@ -32,7 +32,8 @@ const Server = function() {
 
             res.render( 'pages/index', {
                 trips: trips,
-                test: 'hello'
+                test: 'hello',
+                tripId: req.params.sectionId
             });
         });
 
