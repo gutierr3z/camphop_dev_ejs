@@ -29,33 +29,6 @@
                 });
             });
 
-            
-        
-            // for (var i = 0; i < data.length; i++) {
-
-            //     var trip_number = data[i].fld_trip_number;
-            //     var campground_name = data[i].fld_name;
-            //     var arrival_date = data[i].fld_arrival_date;
-            //     var departure_date = data[i].fld_departure_date;
-            //     var site_number = data[i].fld_site_number;
-            //     var latitude = data[i].fld_latitude;
-            //     var longitude = data[i].fld_longitude;
-            //     var search_keywords = data[i].fld_search_keywords;
-            //     var memo = data[i].fld_memo;
-        
-            //     exports.trips[i] = { 
-            //         tripNumber: trip_number,
-            //         campgroundName: campground_name,
-            //         arrivalDate: arrival_date,
-            //         departureDate: departure_date,
-            //         siteNumber: site_number,
-            //         latitude: latitude,
-            //         longitude: longitude,
-            //         searchKeywords: search_keywords,
-            //         memo: memo
-            //     };
-            // }
-
             console.log( 'xxx', self.trips );
             
 
