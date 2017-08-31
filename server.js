@@ -25,7 +25,7 @@ const Server = function() {
     };
 
     this.initializeServer = function() {
-
+        
         var trips = myApp.listOfTrips();
         this.app    = express();
 
@@ -34,7 +34,7 @@ const Server = function() {
 
         // landing page
         this.app.get( '/', function( req, res ) {
-// console.log( 'trips: ', trips );
+
             res.render( 'pages/index', {
                 trips: trips,
                 test: 'hello'
@@ -44,7 +44,7 @@ const Server = function() {
         this.app.get( '/trip/:tripId', function( req, res ) {
 
             res.render( 'pages/trip_page', {
-                trips: trips,
+                // trips: trips,
                 tripId: req.params.sectionId
             });
         });

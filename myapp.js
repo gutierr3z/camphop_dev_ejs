@@ -36,10 +36,23 @@
             console.log( error );
         });
 
-        // console.log( 'outside', self.trips.length );
-
         return self.trips;
     };
     // /HOME
+
+    exports.individualTrip = function( tripId ) {
+
+        var self = this;
+
+        self.db.any( self.sql.trips, [true] ).then( function( data ) {
+
+        }).catch( function( error ) {
+
+            console.log( error );
+        });
+
+        return self.XXX;
+    }
+
 
 })( typeof exports === 'undefined' ? this.share = {} : exports );
