@@ -10,10 +10,10 @@
     exports.listOfTrips = function() {
 
         var self = this;
- 
-        self.db.any( this.sql.trips, [true] ).then( function( data ) {
 
-            // success;
+        self.trips = [];
+ 
+        self.db.any( self.sql.trips, [true] ).then( function( data ) {
 
             data.forEach( function( item ) {
                 self.trips.push({
@@ -29,15 +29,14 @@
                 });
             });
 
-            console.log( 'xxx', self.trips );
-            
+            console.log( 'inside', self.trips.length );
 
         }).catch( function( error ) {
 
             console.log( error );
         });
 
-        console.log( 'hello', self.trips );
+        // console.log( 'outside', self.trips.length );
 
         return self.trips;
     };

@@ -6,9 +6,9 @@
                     <div class="container-fluid oo-thumbs">
                         <div class="row">
 
-                            <% trips.forEach( function( trip ) { %>
-                            
-                                <%- include( '../partials/thumb', { trip: trip }); %>
+                            <% trips.forEach( function( tripObj ) { %>
+                                
+                                <%- include( '../partials/thumb', { tripObj: tripObj }); %>
 
                             <% }); %>
 
