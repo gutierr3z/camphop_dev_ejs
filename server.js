@@ -13,6 +13,7 @@ var hero = pgp( 'postgres://lipotmujqxlpqp:942c5578a0c0cd60928ae78651b4134f9a74b
 
 myApp.db = hero;
 
+
 console.log( 'xxxxxlocxxx', local.connect );
 console.log( 'xxxxxherxxx', hero.connect );
 
