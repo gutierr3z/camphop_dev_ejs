@@ -1,13 +1,14 @@
 ( function( exports ) {
 
     exports.trips = [];
-    exports.name = 'juan';
-    exports.sql = 'SELECT * FROM tbl_trips AS trips JOIN tbl_campgrounds AS camp ON trips.fld_campground_id::int = camp.id ORDER BY trips.id DESC';
-
+    exports.sql = {
+        trips: 'SELECT * FROM tbl_trips AS trips JOIN tbl_campgrounds AS camp ON trips.fld_campground_id::int = camp.id ORDER BY trips.id DESC',
+        trip: ''
+    };
     // HOME
     exports.listOfTrips = function() {
 
-        this.db.any( this.sql, [true] ).then( function( data ) {
+        this.db.any( this.sql.trips, [true] ).then( function( data ) {
 
             // success;
         
