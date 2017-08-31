@@ -13,7 +13,7 @@ var hero = pgp( 'postgres://lipotmujqxlpqp:942c5578a0c0cd60928ae78651b4134f9a74b
 
 myApp.db = local;
 
-
+console.log( 'xxx', !!hero.connect );
 
 const Server = function() {
 
