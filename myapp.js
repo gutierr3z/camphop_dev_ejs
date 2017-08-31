@@ -2,7 +2,7 @@
 
     exports.sql = {
         trips: 'SELECT * FROM tbl_trips AS trips JOIN tbl_campgrounds AS camp ON trips.fld_campground_id::int = camp.id ORDER BY trips.id DESC',
-        trip: 'SELECT * FROM tbl_trips WHERE fld_trip_number = ' + 
+        trip: 'SELECT * FROM tbl_trips WHERE fld_trip_number = '
     };
 
     
@@ -29,7 +29,7 @@
                 });
             });
 
-            console.log( 'inside', self.trips.length );
+            // console.log( 'inside', self.trips.length );
 
         }).catch( function( error ) {
 
@@ -43,15 +43,22 @@
     exports.individualTrip = function( tripId ) {
 
         var self = this;
+        var sql = self.sql.trip + 1;
+        var item;
 
-        self.db.any( self.sql.trip, [true] ).then( function( data ) {
+        console.log( 'sql', sql );
+
+        self.db.any( sql, [true] ).then( function( data ) {
+
+            item = data;
+            console.log( 'hello world' );
 
         }).catch( function( error ) {
 
             console.log( error );
         });
 
-        return self.XXX;
+        return item;
     }
 
 
