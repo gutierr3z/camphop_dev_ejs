@@ -11,9 +11,10 @@ const myApp     = require ( './myapp' );
 var local = pgp( 'postgres://postgres:oova@localhost:5433/camping' );
 var hero = pgp( 'postgres://lipotmujqxlpqp:942c5578a0c0cd60928ae78651b4134f9a74b859a06c3be8934fa2b9ef395c50@ec2-107-22-211-182.compute-1.amazonaws.com:5432/d232e3aq43o7fj' );
 
-myApp.db = local;
+myApp.db = hero;
 
-console.log( 'xxx', !!hero.connect );
+console.log( 'xxxxxlocxxx', local.connect );
+console.log( 'xxxxxherxxx', hero.connect );
 
 const Server = function() {
 
