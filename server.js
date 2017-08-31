@@ -36,16 +36,16 @@ const Server = function() {
         this.app.get( '/', function( req, res ) {
 
             res.render( 'pages/index', {
-                trips: trips,
-                test: 'hello'
+                trips: trips
             });
         });
 
         this.app.get( '/trip/:tripId', function( req, res ) {
+            
 
             res.render( 'pages/trip_page', {
-                // trips: trips,
-                tripId: req.params.sectionId
+                tripId: req.params.sectionId,
+                theTrip: myApp.individualTrip( req.params.sectionId )
             });
         });
 

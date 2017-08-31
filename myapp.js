@@ -2,7 +2,7 @@
 
     exports.sql = {
         trips: 'SELECT * FROM tbl_trips AS trips JOIN tbl_campgrounds AS camp ON trips.fld_campground_id::int = camp.id ORDER BY trips.id DESC',
-        trip: ''
+        trip: 'SELECT * FROM tbl_trips WHERE fld_trip_number = ' + 
     };
 
     
@@ -44,7 +44,7 @@
 
         var self = this;
 
-        self.db.any( self.sql.trips, [true] ).then( function( data ) {
+        self.db.any( self.sql.trip, [true] ).then( function( data ) {
 
         }).catch( function( error ) {
 
