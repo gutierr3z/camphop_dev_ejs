@@ -16,6 +16,7 @@ myApp.db = pgp( 'postgres://postgres:oova@localhost:5433/camping' );
 // console.log( 'xxxxxlocxxx', local.connect() );
 // console.log( 'xxxxxherxxx', hero.connect() );
 
+
 const Server = function() {
 
     this.setupVariables = function() {
@@ -41,8 +42,9 @@ const Server = function() {
         });
 
         this.app.get( '/trip/:tripId', function( req, res ) {
-
+            
             res.render( 'pages/trip_page', {
+                trips: trips,
                 tripId: req.params.sectionId
             });
         });
