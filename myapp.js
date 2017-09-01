@@ -40,38 +40,44 @@
     };
     // /HOME
 
-    exports.individualTrip = function( itemx ) {
-
+    exports.individualTrip = function() {
+        
         var self = this;
+        self.trip;
 
-        self.trip = {};
+        return function( itemx ) {
+            
+            console.log( 'itemx: ', itemx );
+            
 
-        self.db.any( "SELECT * FROM tbl_trips WHERE fld_trip_number = '" + itemx +  "'", [true] ).then( function( data ) {
+            self.db.any( "SELECT * FROM tbl_trips WHERE fld_trip_number = '" + itemx +  "'", [true] ).then( function( data ) {
 
 
-            // data.forEach( function( item ) {
-                self.trip = {
-                    id                  : data[0].id,
-                    campId              : data[0].fld_campground_id,
-                    tripNum             : data[0].fld_trip_number,
-                    arrivalDate         : data[0].fld_arrival_date,
-                    departureDate       : data[0].fld_departure_date,
-                    siteNum             : data[0].fld_site_number,
-                    lat                 : data[0].fld_latitude,
-                    long                : data[0].fld_longitude,
-                    keywords            : data[0].fld_search_keywords,
-                    memo                : data[0].fld_memo
-                };
-            // }
+                // data.forEach( function( item ) {
+                    self.trip = {
+                        id                  : data[0].id,
+                        campId              : data[0].fld_campground_id,
+                        tripNum             : data[0].fld_trip_number,
+                        arrivalDate         : data[0].fld_arrival_date,
+                        departureDate       : data[0].fld_departure_date,
+                        siteNum             : data[0].fld_site_number,
+                        lat                 : data[0].fld_latitude,
+                        long                : data[0].fld_longitude,
+                        keywords            : data[0].fld_search_keywords,
+                        memo                : data[0].fld_memo
+                    };
+                // }
 
-            console.log( 'ARRIVALDATE:', self.trip.arrivalDate );
+                // console.log( 'ARRIVALDATEx:', self.trip.arrivalDate );
 
-        }).catch( function( error ) {
+            }).catch( function( error ) {
 
-            console.log( error );
-        });
+                console.log( error );
+            });
 
-        return self.trip;
+            return self.trip;
+
+        };
     };
 
 

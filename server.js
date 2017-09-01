@@ -8,13 +8,9 @@ const myApp     = require ( './myapp' );
 
 // console.log( 'config=%o', config );
 
-myApp.db = pgp( 'postgres://postgres:oova@localhost:5433/camping' );
+myApp.db = pgp( 'postgres://postgres:oova@localhost:5432/camping' );
 // myApp.db = pgp( 'postgres://lipotmujqxlpqp:942c5578a0c0cd60928ae78651b4134f9a74b859a06c3be8934fa2b9ef395c50@ec2-107-22-211-182.compute-1.amazonaws.com:5432/d232e3aq43o7fj' );
 
-
-
-// console.log( 'xxxxxlocxxx', local.connect() );
-// console.log( 'xxxxxherxxx', hero.connect() );
 
 
 const Server = function() {
@@ -27,6 +23,7 @@ const Server = function() {
     this.initializeServer = function() {
         
         var trips = myApp.listOfTrips();
+        var trip = myApp.individualTrip();
         this.app    = express();
 
         this.app.set( 'views', __dirname + '/views' ); // optional since express defaults to CWD/views 
@@ -42,16 +39,10 @@ const Server = function() {
         });
         // --------------------------------------------------
         this.app.get( '/trip/:tripId', function( req, res ) {
-            
-            // myApp.individualTrip();
-
-            // console.log( 'XXX', req.params.tripId )
-
-            console.log( 'ROUTER: ', myApp.individualTrip( req.params.tripId ) );
 
             res.render( 'pages/trip_page', {
                 tripId: req.params.tripId,
-                theTrip: myApp.individualTrip( req.params.tripId )
+                theTrip: trip( req.params.tripId )
             });
         });
         // --------------------------------------------------
