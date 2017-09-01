@@ -42,10 +42,13 @@ const Server = function() {
 
         this.app.get( '/trip/:tripId', function( req, res ) {
             
+            // myApp.individualTrip();
+
+            console.log( 'XXX', req.params.tripId )
 
             res.render( 'pages/trip_page', {
-                tripId: req.params.sectionId,
-                theTrip: myApp.individualTrip( req.params.sectionId )
+                tripId: req.params.tripId,
+                theTrip: myApp.individualTrip( req.params.tripId )
             });
         });
 

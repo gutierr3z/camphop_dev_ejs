@@ -40,25 +40,24 @@
     };
     // /HOME
 
-    exports.individualTrip = function( tripId ) {
+    exports.individualTrip = function( item ) {
 
         var self = this;
-        var sql = self.sql.trip + 1;
-        var item;
 
-        console.log( 'sql', sql );
+        self.db.any( "SELECT * FROM tbl_trips WHERE fld_trip_number = '" + item +  "'", [true] ).then( function( data ) {
+            
+            // data.forEach( function( item ) {
+            //     console.log( item );
+            // });
 
-        self.db.any( sql, [true] ).then( function( data ) {
-
-            item = data;
-            console.log( 'hello world' );
+            console.log( 'totally', data[0].fld_memo );
 
         }).catch( function( error ) {
 
             console.log( error );
         });
 
-        return item;
+        // return item;
     }
 
 
