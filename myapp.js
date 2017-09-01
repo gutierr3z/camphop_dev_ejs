@@ -45,10 +45,6 @@
         var self = this;
 
         self.db.any( "SELECT * FROM tbl_trips WHERE fld_trip_number = '" + item +  "'", [true] ).then( function( data ) {
-            
-            // data.forEach( function( item ) {
-            //     console.log( item );
-            // });
 
             console.log( 'totally', data[0].fld_memo );
 
@@ -57,7 +53,6 @@
             console.log( error );
         });
 
-        // return item;
     }
 
 
