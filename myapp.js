@@ -4,7 +4,6 @@
         trips: 'SELECT * FROM tbl_trips AS trips JOIN tbl_campgrounds AS camp ON trips.fld_campground_id::int = camp.id ORDER BY trips.id DESC',
         trip: 'SELECT * FROM tbl_trips WHERE fld_trip_number = '
     };
-
     
     // HOME
     exports.listOfTrips = function() {
@@ -28,8 +27,6 @@
                     'memo'              : item.fld_memo
                 });
             });
-
-            // console.log( 'inside', self.trips.length );
 
         }).catch( function( error ) {
 
