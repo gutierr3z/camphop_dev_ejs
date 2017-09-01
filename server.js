@@ -48,9 +48,21 @@ const Server = function() {
             console.log( 'three' );
             // var x = self.trip( req.params.tripId );
 
+            var a = function() {
+                var x = 10;
+                return function() {
+                    return x;   
+                };   
+            };
+
+            // var s = a();
+
+            var s = myApp.individualTrip();
+
             res.render( 'pages/trip_page', {
                 tripId: req.params.tripId,
-                theTrip: myApp.trip
+                // theTrip: self.trip( req.params.tripId )
+                theTrip: s(req.params.tripId)
             });
         });
         // --------------------------------------------------
