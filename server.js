@@ -15,55 +15,63 @@ myApp.db = pgp( 'postgres://postgres:oova@localhost:5432/camping' );
 
 const Server = function() {
 
-    this.setupVariables = function() {
+    var self = this;
 
-        this.port = process.env.PORT || 8080;
+    self.setupVariables = function() {
+
+        self.port = process.env.PORT || 8080;
     };
 
-    this.initializeServer = function() {
+    self.initializeServer = function() {
         
-        var trips = myApp.listOfTrips();
-        var trip = myApp.individualTrip();
-        this.app    = express();
+        var self = this;
 
-        this.app.set( 'views', __dirname + '/views' ); // optional since express defaults to CWD/views 
-        this.app.set( 'view engine', 'ejs' );
+        self.trips = myApp.listOfTrips();
+        self.trip = myApp.individualTrip();
+
+        self.app    = express();
+
+        self.app.set( 'views', __dirname + '/views' ); // optional since express defaults to CWD/views 
+        self.app.set( 'view engine', 'ejs' );
 
         // --------------------------------------------------
         // landing page
-        this.app.get( '/', function( req, res ) {
+        self.app.get( '/', function( req, res ) {
 
             res.render( 'pages/index', {
-                trips: trips
+                trips: self.trips
             });
         });
         // --------------------------------------------------
-        this.app.get( '/trip/:tripId', function( req, res ) {
+        self.app.get( '/trip/:tripId', function( req, res ) {
+
+            console.log( 'three' );
+
 
             res.render( 'pages/trip_page', {
                 tripId: req.params.tripId,
-                theTrip: trip( req.params.tripId )
+                theTrip: self.trip( req.params.tripId )
             });
         });
         // --------------------------------------------------
         // Serve public directories
-        this.app.use( express.static( path.join( __dirname, 'public' ) ) );
-        this.app.use( express.static( path.join( __dirname, 'lib' ) ) );
+        self.app.use( express.static( path.join( __dirname, 'public' ) ) );
+        self.app.use( express.static( path.join( __dirname, 'lib' ) ) );
     };
 
-    this.initialize = function() {
+    self.initialize = function() {
 
-        this.setupVariables();
+        self.setupVariables();
         
         // Create express server and routes
-        this.initializeServer();
+        self.initializeServer();
     };
 
-    this.start = function() {
+    self.start = function() {
 
-        this.app.listen( this.port, function() {
+        self.app.listen( self.port, function() {
 
-            console.log( 'Node Server started on...', Date( Date.now() ), this.port );
+            console.log( 'Node Server started on...', Date( Date.now() ), self.port );
         });
     };
 };

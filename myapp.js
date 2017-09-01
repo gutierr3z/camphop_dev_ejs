@@ -40,35 +40,29 @@
     };
     // /HOME
 
-    exports.individualTrip = function() {
-        
+    exports.individualTrip = function( itemx ) {
+
         var self = this;
         self.trip;
 
         return function( itemx ) {
-            
-            console.log( 'itemx: ', itemx );
-            
+
+            console.log( 'two' );
 
             self.db.any( "SELECT * FROM tbl_trips WHERE fld_trip_number = '" + itemx +  "'", [true] ).then( function( data ) {
 
-
-                // data.forEach( function( item ) {
-                    self.trip = {
-                        id                  : data[0].id,
-                        campId              : data[0].fld_campground_id,
-                        tripNum             : data[0].fld_trip_number,
-                        arrivalDate         : data[0].fld_arrival_date,
-                        departureDate       : data[0].fld_departure_date,
-                        siteNum             : data[0].fld_site_number,
-                        lat                 : data[0].fld_latitude,
-                        long                : data[0].fld_longitude,
-                        keywords            : data[0].fld_search_keywords,
-                        memo                : data[0].fld_memo
-                    };
-                // }
-
-                // console.log( 'ARRIVALDATEx:', self.trip.arrivalDate );
+                self.trip = {
+                    id                  : data[0].id,
+                    campId              : data[0].fld_campground_id,
+                    tripNum             : data[0].fld_trip_number,
+                    arrivalDate         : data[0].fld_arrival_date,
+                    departureDate       : data[0].fld_departure_date,
+                    siteNum             : data[0].fld_site_number,
+                    lat                 : data[0].fld_latitude,
+                    long                : data[0].fld_longitude,
+                    keywords            : data[0].fld_search_keywords,
+                    memo                : data[0].fld_memo
+                };
 
             }).catch( function( error ) {
 
