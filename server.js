@@ -45,11 +45,6 @@ const Server = function() {
         // --------------------------------------------------
         this.app.get( '/trip/:tripId', function( req, res ) {
             
-            // myApp.individualTrip();
-
-            // console.log( 'XXX', req.params.tripId )
-
-            // console.log( 'ROUTER: ', myApp.individualTrip( req.params.tripId ) );
 
             res.render( 'pages/trip_page', {
                 tripId: req.params.tripId,
