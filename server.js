@@ -46,11 +46,11 @@ const Server = function() {
         self.app.get( '/trip/:tripId', function( req, res ) {
 
             console.log( 'three' );
-
+            // var x = self.trip( req.params.tripId );
 
             res.render( 'pages/trip_page', {
                 tripId: req.params.tripId,
-                theTrip: self.trip( req.params.tripId )
+                theTrip: myApp.trip
             });
         });
         // --------------------------------------------------
@@ -70,8 +70,9 @@ const Server = function() {
     self.start = function() {
 
         self.app.listen( self.port, function() {
-
+            console.log( '----------------------------------------------------------------------' );
             console.log( 'Node Server started on...', Date( Date.now() ), self.port );
+            console.log( '----------------------------------------------------------------------' );
         });
     };
 };
