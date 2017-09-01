@@ -40,15 +40,14 @@
     };
     // /HOME
 
-    exports.individualTrip = function( item ) {
+    exports.individualTrip = function( itemx ) {
 
         var self = this;
 
         self.trip = {};
 
-        self.db.any( "SELECT * FROM tbl_trips WHERE fld_trip_number = '" + item +  "'", [true] ).then( function( data ) {
+        self.db.any( "SELECT * FROM tbl_trips WHERE fld_trip_number = '" + itemx +  "'", [true] ).then( function( data ) {
 
-            console.log( 'totally', data[0].fld_memo );
 
             // data.forEach( function( item ) {
                 self.trip = {
@@ -62,16 +61,18 @@
                     long                : data[0].fld_longitude,
                     keywords            : data[0].fld_search_keywords,
                     memo                : data[0].fld_memo
-                }
+                };
             // }
+
+            console.log( 'ARRIVALDATE:', self.trip.arrivalDate );
 
         }).catch( function( error ) {
 
             console.log( error );
         });
 
-        return self.trip
-    }
+        return self.trip;
+    };
 
 
 })( typeof exports === 'undefined' ? this.share = {} : exports );

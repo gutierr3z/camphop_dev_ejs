@@ -32,6 +32,7 @@ const Server = function() {
         this.app.set( 'views', __dirname + '/views' ); // optional since express defaults to CWD/views 
         this.app.set( 'view engine', 'ejs' );
 
+        // --------------------------------------------------
         // landing page
         this.app.get( '/', function( req, res ) {
 
@@ -39,19 +40,21 @@ const Server = function() {
                 trips: trips
             });
         });
-
+        // --------------------------------------------------
         this.app.get( '/trip/:tripId', function( req, res ) {
             
             // myApp.individualTrip();
 
-            console.log( 'XXX', req.params.tripId )
+            // console.log( 'XXX', req.params.tripId )
+
+            console.log( 'ROUTER: ', myApp.individualTrip( req.params.tripId ) );
 
             res.render( 'pages/trip_page', {
                 tripId: req.params.tripId,
                 theTrip: myApp.individualTrip( req.params.tripId )
             });
         });
-
+        // --------------------------------------------------
         // Serve public directories
         this.app.use( express.static( path.join( __dirname, 'public' ) ) );
         this.app.use( express.static( path.join( __dirname, 'lib' ) ) );
