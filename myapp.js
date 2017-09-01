@@ -4,13 +4,16 @@
         trips: 'SELECT * FROM tbl_trips AS trips JOIN tbl_campgrounds AS camp ON trips.fld_campground_id::int = camp.id ORDER BY trips.id DESC',
         trip: 'SELECT * FROM tbl_trips WHERE fld_trip_number = '
     };
+
+    exports.trips = [];
+    exports.trip;
     
     // HOME
     exports.listOfTrips = function() {
 
         var self = this;
 
-        self.trips = [];
+        // self.trips = [];
  
         self.db.any( self.sql.trips, [true] ).then( function( data ) {
 
@@ -40,7 +43,7 @@
     exports.individualTrip = function( itemx ) {
 
         var self = this;
-        self.trip;
+        // self.trip;
 
         return function( itemx ) {
 
