@@ -254,11 +254,22 @@ START : Content
 }
 
 .oo-spot .oo-decoration {
-    height: 84px;
+    height: 97px;
     background-color: #f5df72;
     background: url( ../images/decoration-trees.jpg ) center center no-repeat;
     background-size: cover;
     position: relative;
+}
+
+.oo-spot .oo-msg {
+    /* height: 144px; */
+    background-color: #b6b3a8;
+    text-align: center;
+    padding: 30px 5% 35px;
+    color: #fff;
+    font-weight: bold;
+    font-size: 1.563em;
+    line-height: 1.25em;
 }
 
 .oo-trip-number {

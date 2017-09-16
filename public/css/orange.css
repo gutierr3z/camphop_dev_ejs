@@ -51,6 +51,12 @@ START : Content
     background-size: 50%;
 }
 
+.oo-spot .oo-msg {
+    padding: 30px 10%;
+    font-size: 1.813em;
+    line-height: 1.375em;
+}
+
 /*
 END : Content 
 ============================================================
