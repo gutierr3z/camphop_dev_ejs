@@ -14,7 +14,7 @@ html {
 }
 
 body {
-    background-color: yellow;
+    background-color: white;
 }
 
 body {
@@ -192,19 +192,22 @@ START : Content
 /* Overwrites : -------------------- */
 
 .oo-content-wrapper .col-md-12 {
-    padding-left: 3px;
-    padding-right: 3px;
+    /* padding-left: 3px;
+    padding-right: 3px; */
 }
 
 .thumbnail {
     border-radius: 0px;
     padding: 0px;
-    height: 8em;
-    position: relative;
+    /* height: 8em; */
+    /* position: relative; */
 
     background-repeat: no-repeat;
     background-position: 0px 0px;
     background-size: 110%;
+
+    margin-bottom: 0px;
+    border: 0px;
 }
 
 .oo-thumbs .col-xs-4 {
@@ -213,27 +216,14 @@ START : Content
     height: 9em;
 }
 
-.thumbnail .caption {
-    color: #fff;
-    position: absolute;
-    bottom: 0px;
-    width: 100%;
-    height: 40%;
-    padding: 3px;
-}
-
-.thumbnail .caption h3 {
-    margin: 0px;
-    font-size: 1em;
-}
-
-.thumbnail .caption p {
-    font-size: 0.5em;
-}
-
 .thumbnail .caption h3,
 .thumbnail .caption p {
-    text-shadow: 1px 1px 1px #000;
+    /* text-shadow: 1px 1px 1px #000; */
+}
+
+.oo-col-sm-6 {
+    padding-right: 0px;
+    padding-left: 0px;
 }
 
 /* /Overwrites : -------------------- */
@@ -272,62 +262,68 @@ START : Content
     line-height: 1.25em;
 }
 
-.oo-trip-number {
-    position: absolute;
-    top: 0px;
-    right: 0px;
-    background-color: #ea0000;
-    width: 15px;
-    height: 15px;
-    text-align: center;
+.oo-list-of-thumbs {
+    margin-top: 20px;
 }
-.oo-trip-number h5 {
+
+.oo-thumb {
+    margin-bottom: 20px;
+}
+
+.trip-num-block {
+    float: left;
+    width: 18.5%;
+    background-color: #c0bdb5;
+    margin-right: 4px;
+}
+
+.trip-num-block p {
+    text-align: center;
+    padding: 0px;
     margin: 0px;
-    margin-top: 3px;
-    font-size: 0.6875em;
-    line-height: 1em;
-    font-weight: bold;
+    background-color: #fed230;
+    /* padding: 12% 0px; */
+    margin-bottom: 10px;
+    color: #000;
+}
+
+.trip-pic-block {
+    float: right;
+    width: 100%;
+}
+
+.trip-pic-block p {
+    padding: 0px;
+    margin: 0px;
+    padding-left: 10px;
+    background-color: rgba( 0, 0, 0, 0.5 );
     color: #fff;
 }
 
+.trip-num-block p,
+.trip-pic-block p {
+    line-height: 2em;
+    
+}
+
+.oo-thumb-wrapper {
+    display: flex;
+    position: relative; 
+    overflow: hidden; 
+    width: 100%; 
+    height: 150px;
+}
+
+.trip-num-block,
+.trip-pic-block {
+    align-self: auto;
+}
+
 .oo-thumbs {
-    min-width: 314px;
+    /* min-width: 314px; */
+    padding: 0px;
 }
 
-#oo-thumb-1 {
-    background: url( ../images/thumb_1.jpg );
-    background-repeat: no-repeat;
-    background-position: -40px 0px;
-    background-size: 170%;
-}
-
-#oo-thumb-2 {
-    background: url( ../images/thumb_2.jpg );
-    background-repeat: no-repeat;
-    background-position: 0 0px;
-    background-size: 130%;
-}
-
-#oo-thumb-3 {
-    background: url( ../images/thumb_3.jpg );
-    background-repeat: no-repeat;
-    background-position: 0 0px;
-    background-size: 170%;
-}
-
-#oo-thumb-4 {
-    background: url( ../images/thumb_4.jpg );
-    background-repeat: no-repeat;
-    background-position: 0 0px;
-    background-size: 170%;
-}
-
-#oo-thumb-5 {
-    background: url( ../images/thumb_5.jpg );
-    background-repeat: no-repeat;
-    background-position: -30px 0px;
-    background-size: 150%;
-}
 
 /*
 END : Content 
@@ -345,7 +341,6 @@ START : Footer
 footer {
     min-height: 150px;
     background-color: #e8e8e8;
-    margin-top: 100px;
 }
 
 /*

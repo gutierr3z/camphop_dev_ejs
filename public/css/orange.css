@@ -43,7 +43,14 @@ START : Content
 
 /* Overwrites : -------------------- */
 
-
+.oo-col-sm-6 {
+    position: relative;
+    min-height: 1px;
+    /* padding-right: 15px;
+    padding-left: 15px; */
+    width: 50%;
+    float: left;
+}
 
 /* /Overwrites : -------------------- */
 
