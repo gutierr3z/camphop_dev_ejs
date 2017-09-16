@@ -315,7 +315,7 @@ START : Content
     position: relative; 
     overflow: hidden; 
     width: 100%; 
-    height: 150px;
+    height: 13em;
 }
 
 .trip-num-block,
