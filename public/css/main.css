@@ -1,5 +1,5 @@
 @import url( 'yellow.css' )( min-width: 0px );      /* Tiny Devices */
-@import url( 'orange.css' )( min-width: 544px );    /* Tiny Devices */
+@import url( 'orange.css' )( min-width: 568px );    /* Tiny Devices */ 
 @import url( 'green.css' )( min-width: 768px );     /* Small Devices */
 @import url( 'blue.css' )( min-width: 992px );      /* Medium Devices */
 @import url( 'red.css' )( min-width: 1200px );      /* Large Devices */
