@@ -308,7 +308,6 @@ START : Content
 .trip-num-block p,
 .trip-pic-block p {
     line-height: 2em;
-    
 }
 
 .oo-thumb-wrapper {
@@ -345,7 +344,32 @@ START : Footer
 
 footer {
     min-height: 150px;
+    
+    display: flex;
+
+    background: url( ../images/footer_trees.svg );
     background-color: #e8e8e8;
+    background-size: 300px;
+    background-position: center center;
+}
+
+footer .oo-left-block,
+footer .oo-right-block {
+    align-self: auto;
+}
+
+footer .oo-left-block {
+    align-self: auto;
+}
+
+footer .oo-left-block {
+    width: 60px;
+    
+    background: url( ../images/logo_icon.svg );
+    background-color: #c0bdb5;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: 80%;
 }
 
 /*
