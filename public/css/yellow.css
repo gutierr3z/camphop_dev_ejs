@@ -290,6 +290,11 @@ START : Content
 .trip-pic-block {
     float: right;
     width: 100%;
+
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: 100%;
 }
 
 .trip-pic-block p {
