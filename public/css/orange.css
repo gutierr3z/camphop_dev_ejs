@@ -47,7 +47,9 @@ START : Content
 
 /* /Overwrites : -------------------- */
 
-
+.oo-spot .oo-full-logo {
+    background-size: 50%;
+}
 
 /*
 END : Content 

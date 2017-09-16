@@ -161,15 +161,18 @@ a.oo-brand:visited,
 a.oo-brand:hover,
 a.oo-brand {
     color: #f00;
-    background: url( '../images/logo.svg' );
-    background-size: 88%;
+    background: url( '../images/logo_icon.svg' );
+    background-size: 45%;
     background-repeat: no-repeat;
-    background-position: 0 7px;
+    background-position: 0 0px;
     padding-left: 113px;
     padding-right: 0px;
-    width: 93px;
+    width: 90px;
+    height: 40px;
     overflow: hidden;
     margin-left: 15px;
+    margin-top: 10px;
+    /* border: 1px solid red; */
 }
 
 .oo-header .oo-center-content {
@@ -234,6 +237,29 @@ START : Content
 }
 
 /* /Overwrites : -------------------- */
+
+.oo-spot {
+    background-color: #eae9e4;
+}
+
+.oo-spot .oo-full-logo {
+    text-align: center;
+    padding: 30px;
+    height: 168px;
+
+    background: url( ../images/logo.svg );
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: 275px;
+}
+
+.oo-spot .oo-decoration {
+    height: 84px;
+    background-color: #f5df72;
+    background: url( ../images/decoration-trees.jpg ) center center no-repeat;
+    background-size: cover;
+    position: relative;
+}
 
 .oo-trip-number {
     position: absolute;
