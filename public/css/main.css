@@ -64,25 +64,24 @@
 	40px = 2.5em
 
 
+	CSS Page Structure:
+	All CSS pages should have the same breakdown, 
+	making it easy to change css rules from one breakpoint to the other.
 
-============================================================
-General Rules 
-Overwrites
-
-============================================================
-Header 
-Overwrites
-Navigation
-Navigation Overwrites
-
-============================================================
-Content
-Overwrites
-
-============================================================
-Footer
-Overwrites
-
+	============================================================
+	General Rules 
+	Overwrites
+	============================================================
+	Header 
+	Overwrites
+	Navigation
+	Navigation Overwrites
+	============================================================
+	Content
+	Overwrites
+	============================================================
+	Footer
+	Overwrites
 */
 
 .red {
