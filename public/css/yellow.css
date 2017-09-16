@@ -270,6 +270,11 @@ START : Content
     margin-bottom: 20px;
 }
 
+.oo-thumb a:focus,
+.oo-thumb a {
+    text-decoration: none;
+}
+
 .trip-num-block {
     float: left;
     width: 18.5%;
@@ -360,6 +365,11 @@ footer .oo-right-block {
 
 footer .oo-left-block {
     align-self: auto;
+}
+
+footer .oo-right-block {
+    align-self: center;
+    padding-left: 15px;
 }
 
 footer .oo-left-block {
