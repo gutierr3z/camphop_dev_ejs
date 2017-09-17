@@ -222,10 +222,10 @@ START : Content
     /* height: 144px; */
     background-color: #b6b3a8;
     text-align: center;
-    padding: 30px 5% 40px;
+    padding: 30px 10% 40px;
     color: #fff;
     font-weight: bold;
-    font-size: 1.563em;
+    font-size: 1.3125em;
     line-height: 1.25em;
 }
 
@@ -287,6 +287,7 @@ START : Content
 .oo-gallery .row > a .oo-pic-block p {
     padding: 1.5vh 0px;
     line-height: 1.25em;
+    font-size: 0.875em;
 }
 
 .oo-gallery .row > a .oo-pic-block p {
@@ -330,6 +331,7 @@ footer .oo-left-block {
 footer .oo-right-block {
     align-self: center;
     padding-left: 15px;
+    font-size: 0.875em;
 }
 
 footer .oo-left-block {

@@ -22,7 +22,9 @@ START : Header
 
 /* Overwrites : -------------------- */
 
-
+.navbar {
+    min-height: 70px;
+}
 
 /* /Overwrites : -------------------- */
 
@@ -128,6 +130,7 @@ START : Content
 .oo-gallery .row > a .oo-pic-block p {
     padding-top: 1vh;
     padding-bottom: 1vh;
+    font-size: 1em;
 }
 
 /*
@@ -143,7 +146,9 @@ START : Footer
 
 /* /Overwrites : -------------------- */
 
-
+footer .oo-right-block {
+    font-size: 1em;
+}
 
 /*
 END : Footer 
