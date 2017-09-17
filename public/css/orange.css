@@ -48,8 +48,8 @@ START : Content
 /* /Overwrites : -------------------- */
 
 .oo-spot .oo-full-logo {
-    background-size: 50%;
     background-size: 50vw;
+    height: 58vh;
 }
 
 .oo-spot .oo-msg {

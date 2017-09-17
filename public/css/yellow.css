@@ -202,12 +202,14 @@ START : Content
 .oo-spot .oo-full-logo {
     text-align: center;
     padding: 30px;
-    height: 168px;
+    /* height: 168px; */
+    height: 30vh;
 
     background: url( ../images/logo.svg );
     background-repeat: no-repeat;
     background-position: center center;
     background-size: 275px;
+    background-size: 48vh;
 }
 
 .oo-spot .oo-decoration {

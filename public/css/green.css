@@ -115,7 +115,8 @@ START : Content
 }
 
 .oo-spot .oo-full-logo {
-    height: 245px;
+    background-size: 70vw;
+    height: 34vh;
 }
 
 .oo-spot .oo-decoration {
