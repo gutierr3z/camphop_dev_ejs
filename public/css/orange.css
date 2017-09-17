@@ -53,9 +53,13 @@ START : Content
 }
 
 .oo-spot .oo-msg {
-    padding: 30px 10%;
-    font-size: 1.813em;
+    padding: 30px 18% 50px;
+    font-size: 1.563em;
     line-height: 1.375em;
+}
+
+.oo-spot .oo-decoration {
+    height: 125px;
 }
 
 .oo-gallery .row > a {
