@@ -213,7 +213,7 @@ START : Content
 }
 
 .oo-spot .oo-decoration {
-    height: 97px;
+    height: 20vh;
     background-color: #f5df72;
     background: url( ../images/decoration-trees.jpg ) center center no-repeat;
     background-size: cover;

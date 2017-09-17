@@ -120,7 +120,8 @@ START : Content
 }
 
 .oo-spot .oo-decoration {
-    height: 155px;
+    /* height: 125px; */
+    height: 20vh;
 }
 
 .oo-spot .oo-msg {

@@ -59,7 +59,8 @@ START : Content
 }
 
 .oo-spot .oo-decoration {
-    height: 125px;
+    /* height: 125px; */
+    height: 30vh;
 }
 
 .oo-gallery .row > a {
