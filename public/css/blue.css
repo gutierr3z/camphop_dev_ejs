@@ -10,7 +10,7 @@ START : General Rules
 /* /Overwrites : -------------------- */
 
 body {
-    background-color: blue;
+    /* background-color: blue; */
 }
 
 /*
@@ -29,7 +29,7 @@ START : Header
 /* Navigation : -------------------- */
 
 .navbar > .container-fluid .navbar-brand {
-    margin-left: 0px;
+    /* margin-left: 0px; */
 }
 
 /* /Navigation : -------------------- */
@@ -45,24 +45,43 @@ START : Content
 
 /* Overwrites : -------------------- */
 
-.thumbnail {
-    background-repeat: no-repeat;
-    background-position: 0px 0px;
-    background-size: 100%;
-}
+
 
 /* /Overwrites : -------------------- */
 
+.oo-spot .oo-full-logo {
+    background-size: 64vw;
+    height: 49vh;
+}
+
+.oo-spot .oo-decoration {
+    height: 30vh;
+}
+
+.oo-spot .oo-msg {
+    padding: 30px 18% 50px;
+    font-size: 2.1875em;
+    line-height: 1.375em;
+}
+
+.oo-gallery {
+    width: 1000px;
+}
+
+.oo-gallery .row > a .oo-pic-block {
+    height: 40vh;
+}
+
 .oo-header .oo-center-content {
-    float: none;
+    /* float: none;
     margin: 0px auto;
-    width: 992px;
+    width: 992px; */
 }
 
 .oo-content-wrapper {
-    float: none;
+    /* float: none;
     margin: 0px auto;
-    width: 992px;
+    width: 992px; */
 }
 
 /*
