@@ -202,7 +202,6 @@ START : Content
 .oo-spot .oo-full-logo {
     text-align: center;
     padding: 30px;
-    /* height: 168px; */
     height: 30vh;
 
     background: url( ../images/logo.svg );
@@ -221,7 +220,6 @@ START : Content
 }
 
 .oo-spot .oo-msg {
-    /* height: 144px; */
     background-color: #b6b3a8;
     text-align: center;
     padding: 30px 10% 40px;
