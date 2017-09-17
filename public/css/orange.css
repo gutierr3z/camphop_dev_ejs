@@ -69,6 +69,12 @@ START : Content
     height: 50vh;
 }
 
+.oo-gallery .row > a .oo-num-block p,
+.oo-gallery .row > a .oo-pic-block p {
+    padding-top: 2vh;
+    padding-bottom: 2vh;
+}
+
 /*
 END : Content 
 ============================================================
