@@ -48,7 +48,8 @@ START : Content
     min-height: 1px;
     /* padding-right: 15px;
     padding-left: 15px; */
-    width: 49.3%;
+    /* width: 49.3%; */
+    width: 50%;
     float: left;
 }
 

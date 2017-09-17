@@ -191,11 +191,6 @@ START : Content
 
 /* Overwrites : -------------------- */
 
-.oo-content-wrapper .col-md-12 {
-    /* padding-left: 3px;
-    padding-right: 3px; */
-}
-
 .thumbnail {
     border-radius: 0px;
     padding: 0px;
@@ -208,12 +203,6 @@ START : Content
 
     margin-bottom: 0px;
     border: 0px;
-}
-
-.oo-thumbs .col-xs-4 {
-    padding-right: 1px;
-    padding-left: 1px; 
-    height: 9em;
 }
 
 .thumbnail .caption h3,
@@ -262,8 +251,27 @@ START : Content
     line-height: 1.25em;
 }
 
-.oo-list-of-thumbs {
+.oo-gallery {
     margin-top: 20px;
+    border: 2px solid blue;
+}
+
+.oo-gallery .row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.oo-gallery .row > div {
+    flex: 0 1 45%;
+    /* margin: -10px 0 0 -10px;
+    padding: 10px 0 0 10px; */
+}
+
+
+/* XXXXXX */
+.oo-list-of-thumbs {
+    /* margin-top: 20px; */
 }
 
 .oo-thumb {
@@ -326,11 +334,6 @@ START : Content
 .trip-num-block,
 .trip-pic-block {
     align-self: auto;
-}
-
-.oo-thumbs {
-    /* min-width: 314px; */
-    padding: 0px;
 }
 
 

@@ -1,25 +1,13 @@
-<div class="container oo-list-of-thumbs">
+<div class="container oo-gallery">
+
     <div class="row">
-        <div class="col-sm-12 oo-content-wrapper">
+        
+        <% trips.forEach( function( tripObj ) { %>
+            
+            <%- include( '../partials/thumb', { tripObj: tripObj }); %>
 
-            <div class="row">
-                <div class="col-md-12">
+        <% }); %>
 
-                    <div class="container-fluid oo-thumbs">
-                        <div class="row">
-
-                            <% trips.forEach( function( tripObj ) { %>
-                                
-                                <%- include( '../partials/thumb', { tripObj: tripObj }); %>
-
-                            <% }); %>
-
-                        </div>
-                    </div>
-
-                </div>
-            </div>
-
-        </div>
     </div>
+    
 </div>
