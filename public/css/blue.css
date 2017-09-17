@@ -50,12 +50,12 @@ START : Content
 /* /Overwrites : -------------------- */
 
 .oo-spot .oo-full-logo {
-    background-size: 64vw;
-    height: 49vh;
+    background-size: 60vw;
+    height: 45vh;
 }
 
 .oo-spot .oo-decoration {
-    height: 30vh;
+    height: 26vh;
 }
 
 .oo-spot .oo-msg {
@@ -68,9 +68,15 @@ START : Content
     width: 1000px;
 }
 
-.oo-gallery .row > a .oo-pic-block {
-    height: 40vh;
+.oo-gallery .row > a {
+    flex: 0 1 33%;
 }
+
+.oo-gallery .row > a .oo-pic-block {
+    height: 33vh;
+}
+
+
 
 .oo-header .oo-center-content {
     /* float: none;

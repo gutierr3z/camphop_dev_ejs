@@ -10,7 +10,7 @@ START : General Rules
 /* /Overwrites : -------------------- */
 
 body {
-    background-color: red;
+    /* background-color: red; */
 }
 
 /*
@@ -47,7 +47,10 @@ START : Content
 
 /* /Overwrites : -------------------- */
 
-
+.oo-spot .oo-full-logo {
+    background-size: 40vw;
+    height: 45vh;
+}
 
 /*
 END : Content 
