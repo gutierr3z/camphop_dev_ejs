@@ -253,6 +253,9 @@ START : Content
     align-items: stretch;
 }
 
+.oo-gallery .row > a:active,
+.oo-gallery .row > a:visited,
+.oo-gallery .row > a:hover,
 .oo-gallery .row > a:focus {
     text-decoration: none;
     color: #000;
