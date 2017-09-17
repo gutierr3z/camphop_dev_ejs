@@ -10,7 +10,7 @@ START : General Rules
 /* /Overwrites : -------------------- */
 
 body {
-    background-color: green;
+    /* background-color: green; */
 }
 
 /*
@@ -89,22 +89,7 @@ START : Header
 /* /Navigation : -------------------- */
 
 /* Logo */
-a.oo-brand:visited, a.oo-brand:hover, a.oo-brand {
-    background-position: 15px 11px;
-}
 
-a.oo-brand:visited, a.oo-brand:hover, a.oo-brand {
-    color: #f00;
-    background: url( ../images/logo.svg );
-    background-size: 85%;
-    background-repeat: no-repeat;
-    background-position: 0 5px;
-    padding-left: 300px;
-    padding-right: 0px;
-    width: 93px;
-    height: 114px;
-    overflow: hidden;
-}
 
 /*
 END : Header 
@@ -115,59 +100,33 @@ START : Content
 
 /* Overwrites : -------------------- */
 
-.thumbnail {
-    min-height: 275px;
-
-    background-repeat: no-repeat;
-    background-position: 0px 0px;
-    background-size: 120%;
-}
-
-.thumbnail .caption {
-    color: #fff;
-    position: absolute;
-    bottom: 0px;
-    width: 100%;
-    padding: 10px;
-}
-
-.thumbnail .caption h3 {
-    margin: 0px;
-    font-size: 2em;
-    font-weight: bold;
-}
-
-.thumbnail .caption p {
-    font-size: 1em;
-}
 
 /* /Overwrites : -------------------- */
 
-/* Layout */
-.oo-header .oo-center-content {
-    height: 130px;
-    padding-top: 8px;
+.oo-spot {
+    width: auto;
 }
 
-.oo-center-content {
-    padding-left: 15px;
-    padding-right: 15px;
+.oo-spot .oo-full-logo {
+    height: 225px;
 }
 
-.oo-trip-number {
-    padding: 10px;
-    width: 35px;
-    height: 35px;
-}
-.oo-trip-number h5 {
-    font-size: 1.375em;
-    line-height: .5em;
+.oo-spot .oo-decoration {
+    height: 155px;
 }
 
-.oo-thumbs .col-xs-4 {
-    padding-right: 4px;
-    padding-left: 4px;
-    min-height: 330px;
+.oo-gallery {
+    padding: 0px;
+}
+
+.oo-gallery .row > a .oo-pic-block {
+    height: 25vh;
+}
+
+.oo-gallery .row > a .oo-num-block p,
+.oo-gallery .row > a .oo-pic-block p {
+    padding-top: 1vh;
+    padding-bottom: 1vh;
 }
 
 /*

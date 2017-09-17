@@ -49,6 +49,7 @@ START : Content
 
 .oo-spot .oo-full-logo {
     background-size: 50%;
+    background-size: 50vw;
 }
 
 .oo-spot .oo-msg {

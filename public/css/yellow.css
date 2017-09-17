@@ -9,7 +9,7 @@ START : General Rules
 
 /* /Overwrites : -------------------- */
 
-html {
+html, body {
     font-size: 16px;
 }
 
