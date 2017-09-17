@@ -302,6 +302,16 @@ START : Content
     padding-left: 15px;
 }
 
+/* Trip Page : -------------------- */
+
+.oo-hero {
+    width: 100%;
+    height: 40vh;
+    background-size: cover;
+}
+
+/* /Trip Page : -------------------- */
+
 /*
 END : Content 
 ============================================================

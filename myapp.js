@@ -7,6 +7,8 @@
 
     exports.trips = [];
     exports.trip;
+
+    exports.xxx = [];
     
     // HOME
     exports.listOfTrips = function() {
@@ -47,31 +49,35 @@
 
         return function( itemx ) {
 
-            console.log( 'two' );
-            var xxx;
+            console.log( 'twox', itemx );
+            // self.xxx = 'hi';
             
-            self.db.any( "SELECT * FROM tbl_trips WHERE fld_trip_number = '" + itemx +  "'", [true] ).then( function( data ) {
-                // data.forEach( function( item ) {
-                    xxx = {
-                        id                  : data.id,
-                        campId              : data.fld_campground_id,
-                        tripNum             : data.fld_trip_number,
-                        arrivalDate         : data.fld_arrival_date,
-                        departureDate       : data.fld_departure_date,
-                        siteNum             : data.fld_site_number,
-                        lat                 : data.fld_latitude,
-                        long                : data.fld_longitude,
-                        keywords            : data.fld_search_keywords,
-                        memo                : data.fld_memo
-                    };
-                // });
+            // self.db.any( "SELECT * FROM tbl_trips WHERE fld_trip_number = '" + itemx +  "'", [true] ).then( function( data ) {
+            self.db.any( "SELECT * FROM tbl_trips WHERE fld_trip_number = '19'", [true] ).then( function( data ) {
+                
+                data.forEach( function( item ) {
+                    // console.log( 'data:', data[0].fld_arrival_date );
+                    self.xxx.push({
+                        'id'                  : item.id,
+                        'campId'              : item.fld_campground_id,
+                        'tripNum'             : item.fld_trip_number,
+                        'arrivalDate'         : item.fld_arrival_date,
+                        'departureDate'       : item.fld_departure_date,
+                        'siteNum'             : item.fld_site_number,
+                        'lat'                 : item.fld_latitude,
+                        'long'                : item.fld_longitude,
+                        'keywords'            : item.fld_search_keywords,
+                        'memo'                : item.fld_memo
+                    });
+                });
+
             }).catch( function( error ) {
 
                 console.log( error );
             });
             
-
-            return xxx;
+            console.log( 'hey:', self.xxx.length );
+            return self.xxx;
 
         };
     };
