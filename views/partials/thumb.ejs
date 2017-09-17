@@ -1,4 +1,14 @@
-<div class="red">
-    hello <%= tripObj.trip_nuber %>
-</div>
+<a href="/trip/<%= tripObj.trip_nuber %>" class="thumbnailxx">
 
+    <div class="oo-num-block">
+        <p>
+            <%= tripObj.trip_nuber %>
+        </p>
+    </div>
+
+    <div class="oo-pic-block" style="background-image: url( 'images/cover_pic_<%= tripObj.trip_nuber %>.jpg' );">
+        <p>
+            <%= tripObj.campground_name %>
+        </p>
+    </div>
+</a>

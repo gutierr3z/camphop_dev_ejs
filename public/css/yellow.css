@@ -194,8 +194,6 @@ START : Content
 .thumbnail {
     border-radius: 0px;
     padding: 0px;
-    /* height: 8em; */
-    /* position: relative; */
 
     background-repeat: no-repeat;
     background-position: 0px 0px;
@@ -253,7 +251,6 @@ START : Content
 
 .oo-gallery {
     margin-top: 20px;
-    border: 2px solid blue;
 }
 
 .oo-gallery .row {
@@ -267,83 +264,42 @@ START : Content
     content: initial;
 }
 
-.oo-gallery .row > div {
-    flex: 0 1 45%;
-}
-
-.oo-gallery .row > div:first-child {
-    margin: auto;
-    background-color: red;
-    padding: 0px;
-    margin: 0px;
-}
-
-
-/* XXXXXX */
-.oo-list-of-thumbs {
-    /* margin-top: 20px; */
-}
-
-.oo-thumb {
+.oo-gallery .row > a {
+    flex: 0 1 100%;
     margin-bottom: 20px;
+    display: flex;
+    align-items: stretch;
 }
 
-.oo-thumb a:focus,
-.oo-thumb a {
-    text-decoration: none;
-}
-
-.trip-num-block {
-    float: left;
-    width: 18.5%;
+.oo-gallery .row > a .oo-num-block {
+    flex: 1 1 20%;
     background-color: #c0bdb5;
-    margin-right: 4px;
+    margin-right: 5px;
 }
 
-.trip-num-block p {
-    text-align: center;
+.oo-gallery .row > a .oo-num-block p {
     padding: 0px;
     margin: 0px;
     background-color: #fed230;
-    /* padding: 12% 0px; */
-    margin-bottom: 10px;
+    text-align: center;
     color: #000;
 }
 
-.trip-pic-block {
-    float: right;
-    width: 100%;
-
+.oo-gallery .row > a .oo-pic-block {
+    flex: 1 1 80%;
+    background-color: orange;
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center center;
     background-size: 100%;
+
+    height: 30vh;
 }
 
-.trip-pic-block p {
-    padding: 0px;
-    margin: 0px;
-    padding-left: 10px;
-    background-color: rgba( 0, 0, 0, 0.5 );
+.oo-gallery .row > a .oo-pic-block p {
+    background-color: rgba( 0, 0, 0, .5 );
+    padding: 0px 15px;
     color: #fff;
-}
-
-.trip-num-block p,
-.trip-pic-block p {
-    line-height: 2em;
-}
-
-.oo-thumb-wrapper {
-    display: flex;
-    position: relative; 
-    overflow: hidden; 
-    width: 100%; 
-    height: 13em;
-}
-
-.trip-num-block,
-.trip-pic-block {
-    align-self: auto;
 }
 
 
