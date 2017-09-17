@@ -115,6 +115,10 @@ START : Content
     height: 155px;
 }
 
+.oo-spot .oo-msg {
+    padding: 35px 20% 45px;
+}
+
 .oo-gallery {
     padding: 0px;
 }
