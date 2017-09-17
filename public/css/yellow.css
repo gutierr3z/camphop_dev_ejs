@@ -262,10 +262,20 @@ START : Content
     justify-content: space-between;
 }
 
+.oo-gallery .row:after,
+.oo-gallery .row:before {
+    content: initial;
+}
+
 .oo-gallery .row > div {
     flex: 0 1 45%;
-    /* margin: -10px 0 0 -10px;
-    padding: 10px 0 0 10px; */
+}
+
+.oo-gallery .row > div:first-child {
+    margin: auto;
+    background-color: red;
+    padding: 0px;
+    margin: 0px;
 }
 
 
