@@ -1,10 +1,10 @@
 
-var lati = theTrip.latitude;
-var long = theTrip.longitude;
-var map = null;
+var lati = 40.872302;
+var long = -74.808693;
+// var map = null;
 var tackContent = '';
 
-var googleLatAndLong = new google.maps.LatLng( theTrip.latitude, theTrip.longitude );
+var googleLatAndLong = new google.maps.LatLng( lati, long );
 
 var mapOptions = {
     zoom: 14,
@@ -14,8 +14,8 @@ var mapOptions = {
     // mapTypeId: google.maps.MapTypeId.HYBRID
     mapTypeId: google.maps.MapTypeId.TERRAIN
 };
-
-map = new google.maps.Map( document.getElementById( 'oo-map' ), mapOptions );
+console.log( 'aaaaa', google.maps.MapTypeId );
+var map = new google.maps.Map( document.getElementById( 'oomap' ), mapOptions );
 
 // styles array for the map
 var mapStyles = [

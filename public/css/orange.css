@@ -50,6 +50,7 @@ START : Content
 .oo-spot .oo-full-logo {
     background-size: 50vw;
     height: 58vh;
+    max-height: 30vh;
 }
 
 .oo-spot .oo-msg {
@@ -73,6 +74,7 @@ START : Content
 
 .oo-gallery .row > a .oo-pic-block {
     height: 50vh;
+    max-height: 30vh;
 }
 
 .oo-gallery .row > a .oo-num-block p,
