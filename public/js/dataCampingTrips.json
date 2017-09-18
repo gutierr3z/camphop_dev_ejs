@@ -1,0 +1,122 @@
+[
+	{
+		"id": "1",
+		"parkName": "Max V Shaul State Park",
+		"siteNum": "6",
+		"lat": "42.549221",
+		"long": "-74.410240",
+		"date": "4/30/2009"
+	}, 
+	{
+		"id": "2",
+		"parkName": "Macedonia Brook State Park",
+		"siteNum": "22",
+		"lat": "41.776290",
+		"long": "-73.494858",
+		"date": "8/21/2009"
+	}, 
+	{
+		"id": "3",
+		"parkName": "Ricketts Glen State Park",
+		"siteNum": "23",
+		"lat": "41.341365",
+		"long": "-76.299540",
+		"date": "9/25/2009"
+	}, 
+	{
+		"id": "4",
+		"parkName": "Lake Taghkanic State Park",
+		"siteNum": "G4",
+		"lat": "42.095453",
+		"long": "-73.702639",
+		"date": "10/9/2009"
+	}, 
+	{
+		"id": "5",
+		"parkName": "Clarence Fahnestock State Park",
+		"siteNum": "",
+		"lat": "41.464562",
+		"long": "-73.823340",
+		"date": "11/21/2009"
+	}, 
+	{
+		"id": "6",
+		"parkName": "Dingmans Campground, Delaware Water Gap",
+		"siteNum": "12",
+		"lat": "41.209943",
+		"long": "-74.872531",
+		"date": "2/27/2010"
+	}, 
+	{
+		"id": "7",
+		"parkName": "Wildwood State Park",
+		"siteNum": "B021",
+		"lat": "40.962190",
+		"long": "-72.801983",
+		"date": "4/2/2010"
+	}, 
+	{
+		"id": "8",
+		"parkName": "Putnam Pond, NY",
+		"siteNum": "46",
+		"lat": "43.843717",
+		"long": "-73.571557",
+		"date": "7/2/2010"
+	}, 
+	{
+		"id": "9",
+		"parkName": "Wells State Park",
+		"siteNum": "33",
+		"lat": "42.146244",
+		"long": "-72.053532",
+		"date": "7/17/2010"
+	}, 
+	{
+		"id": "10",
+		"parkName": "Macedonia Brook State Park",
+		"siteNum": "14",
+		"lat": "41.776091",
+		"long": "-73.495676",
+		"date": "8/20/2010"
+	}, 
+	{
+		"id": "11",
+		"parkName": "Clarence Fahnestock State Park",
+		"siteNum": "19",
+		"lat": "41.463146",
+		"long": "-73.823366",
+		"date": "12/10/2010"
+	}, 
+	{
+		"id": "12",
+		"parkName": "Henderson Beach State Park",
+		"siteNum": "37",
+		"lat": "30.385842",
+		"long": "-86.435781",
+		"date": "3/30/2011"
+	}, 
+	{
+		"id": "13",
+		"parkName": "Macedonia Brook State Park",
+		"siteNum": "30",
+		"lat": "41.784171",
+		"long": "-73.488680",
+		"date": "5/4/2012"
+	}, 
+	{
+		"id": "14",
+		"parkName": "Macedonia Brook State Park",
+		"siteNum": "30",
+		"lat": "41.784171",
+		"long": "-73.488680",
+		"date": "7/3/2012"
+	}, 
+	{
+		"id": "15",
+		"parkName": "Clarence Fahnestock State Park",
+		"siteNum": "40",
+		"lat": "41.463146",
+		"long": "-73.823366",
+		"date": "10/26/2012"
+	}
+]
