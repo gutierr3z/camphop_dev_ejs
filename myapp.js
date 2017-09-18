@@ -8,27 +8,26 @@
     exports.trips = [];
     exports.trip;
 
-    exports.xxx = [];
+    exports.xxx = {};
     
     // HOME
     exports.listOfTrips = function() {
 
         var self = this;
-
-        // self.trips = [];
  
         self.db.any( self.sql.trips, [true] ).then( function( data ) {
 
             data.forEach( function( item ) {
                 self.trips.push({
-                    'trip_nuber'        : item.fld_trip_number,
-                    'campground_name'   : item.fld_name,
-                    'arrival_date'      : item.fld_arrival_date,
-                    'departure_date'    : item.fld_departure_date,
-                    'site_number'       : item.fld_site_number,
+                    'id'                : item.id,
+                    'tripNumber'        : item.fld_trip_number,
+                    'campgroundName'   : item.fld_name,
+                    'arrivalDate'      : item.fld_arrival_date,
+                    'departureDate'    : item.fld_departure_date,
+                    'siteNumber'       : item.fld_site_number,
                     'latitude'          : item.fld_latitude,
                     'longitude'         : item.fld_longitude,
-                    'search_keywords'   : item.fld_search_keywords,
+                    'searchKeywords'   : item.fld_search_keywords,
                     'memo'              : item.fld_memo
                 });
             });
@@ -42,46 +41,65 @@
     };
     // /HOME
 
-    exports.individualTrip = function( itemx ) {
+    //exports.db = exports.db.any( `SELECT * FROM tbl_trips WHERE fld_trip_number = '${ itemx }'`, [true] ).then( function( data ) {
+
+    // }).catch( function( error ) {
+        
+    //                 console.log( error );
+    //             });
+
+    exports.individualTrip = function( x ) {
 
         var self = this;
-        // self.trip;
 
-        return function( itemx ) {
+        self.obj = {};
 
-            console.log( 'twox', itemx );
-            // self.xxx = 'hi';
-            
-            // self.db.any( "SELECT * FROM tbl_trips WHERE fld_trip_number = '" + itemx +  "'", [true] ).then( function( data ) {
-            self.db.any( "SELECT * FROM tbl_trips WHERE fld_trip_number = '19'", [true] ).then( function( data ) {
+
+        this.trips.forEach( function( item ) {
+            if( item.tripNumber == x ) {
+                self.obj = item;
+                console.log( item );
+            }
+        });
                 
-                data.forEach( function( item ) {
-                    // console.log( 'data:', data[0].fld_arrival_date );
-                    self.xxx.push({
-                        'id'                  : item.id,
-                        'campId'              : item.fld_campground_id,
-                        'tripNum'             : item.fld_trip_number,
-                        'arrivalDate'         : item.fld_arrival_date,
-                        'departureDate'       : item.fld_departure_date,
-                        'siteNum'             : item.fld_site_number,
-                        'lat'                 : item.fld_latitude,
-                        'long'                : item.fld_longitude,
-                        'keywords'            : item.fld_search_keywords,
-                        'memo'                : item.fld_memo
-                    });
-                });
 
-            }).catch( function( error ) {
 
-                console.log( error );
-            });
+
+
+        return self.obj;
             
-            console.log( 'hey:', self.xxx.length );
-            return self.xxx;
 
-        };
+        
+
+
+
+        // return function( itemx ) {
+            
+        //     self.db.any( `SELECT * FROM tbl_trips WHERE fld_trip_number = '${ itemx }'`, [true] ).then( function( data ) {
+
+        //             self.xxx={
+        //                 'id'                  : data[0].id,
+        //                 'campId'              : data[0].fld_campground_id,
+        //                 'tripNum'             : data[0].fld_trip_number,
+        //                 'arrivalDate'         : data[0].fld_arrival_date,
+        //                 'departureDate'       : data[0].fld_departure_date,
+        //                 'siteNum'             : data[0].fld_site_number,
+        //                 'lat'                 : data[0].fld_latitude,
+        //                 'long'                : data[0].fld_longitude,
+        //                 'keywords'            : data[0].fld_search_keywords,
+        //                 'memo'                : data[0].fld_memo
+        //             };
+
+        //     }).catch( function( error ) {
+
+        //         console.log( error );
+        //     });
+            
+        //     console.log( 'hey:', self.xxx.fld_trip_number );
+        //     return self.xxx;
+
+        // };
     };
 
-    // return exports;
 
 })( typeof exports === 'undefined' ? this.share = {} : exports );

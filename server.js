@@ -28,7 +28,7 @@ const Server = function() {
     this.initializeServer = function() {
         
         var trips = myApp.listOfTrips();
-        var trip = myApp.individualTrip();
+        
         this.app    = express();
 
         this.app.set( 'views', __dirname + '/views' ); // optional since express defaults to CWD/views 
@@ -44,13 +44,16 @@ const Server = function() {
         });
         
         // --------------------------------------------------
+        // var trip = myApp.individualTrip();
         this.app.get( '/trip/:tripId', function( req, res ) {
             
-            // console.log( 'ssss' );
+            
             res.render( 'pages/trip_page', {
                 tripId: req.params.tripId,
-                theTrip: trip( req.params.tripId )
+                // theTrip: trip( req.params.tripId )
+                theTrip: myApp.individualTrip( req.params.tripId )
             });
+
             
         });
         // --------------------------------------------------
