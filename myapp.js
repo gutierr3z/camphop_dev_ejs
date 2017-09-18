@@ -58,7 +58,6 @@
         this.trips.forEach( function( item ) {
             if( item.tripNumber == x ) {
                 self.obj = item;
-                console.log( item );
             }
         });
                 
