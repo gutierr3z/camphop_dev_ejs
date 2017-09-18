@@ -44,17 +44,19 @@ const Server = function() {
         });
         
         // --------------------------------------------------
-        // var trip = myApp.individualTrip();
         this.app.get( '/trip/:tripId', function( req, res ) {
-            
             
             res.render( 'pages/trip_page', {
                 tripId: req.params.tripId,
                 // theTrip: trip( req.params.tripId )
                 theTrip: myApp.individualTrip( req.params.tripId )
             });
-
+        });
+        // --------------------------------------------------
+        // about
+        this.app.get( '/about', function( req, res ) {
             
+            res.render( 'pages/about', {});
         });
         // --------------------------------------------------
         // Serve public directories
