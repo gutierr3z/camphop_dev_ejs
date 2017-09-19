@@ -1,5 +1,5 @@
-var OOVA = OOVA || {};
-OOVA.geoLocation = ( function( $ ) {
+window.OOVA = window.OOVA || {};
+window.OOVA.geoLocation = ( function( $ ) {
 	/*
     -------------------------------------------------------------
     PRIVATE PROPERTIES
@@ -43,7 +43,7 @@ OOVA.geoLocation = ( function( $ ) {
 		};
 
 		// create new map instance and passit to a DOM element, and options above
-		map = new google.maps.Map( document.getElementById( 'oomap' ), mapOptions );
+		map = new google.maps.Map( document.getElementById( 'oo-map' ), mapOptions );
 
 		// styles array for the map
 		var mapStyles = [
@@ -102,7 +102,7 @@ OOVA.geoLocation = ( function( $ ) {
 		
 		// create an instance of a marker image
 		var pinShadow = new google.maps.MarkerImage(
-		    "images/marker.png",
+		    "../images/marker.png",
 		    null,
 		    null,
 		    /* Offset x axis 33% of overall size, Offset y axis 100% of overall size */
@@ -141,11 +141,11 @@ OOVA.geoLocation = ( function( $ ) {
     */
 	function _updateUIElements( data, key ) {
 
-    	$( campDate ).html( data[ key ].date || 'N/A' );
-		$( campSite ).html( data[ key ].siteNum || 'N/A' );
-		$( campLat ).html( data[ key ].lat );
-		$( campLong ).html( data[ key ].long );
-		$( header ).html( data[ key ].parkName );
+    	// $( campDate ).html( data[ key ].date || 'N/A' );
+		// $( campSite ).html( data[ key ].siteNum || 'N/A' );
+		// $( campLat ).html( data[ key ].lat );
+		// $( campLong ).html( data[ key ].long );
+		// $( header ).html( data[ key ].parkName );
     }
 	/*
     -------------------------------------------------------------
@@ -153,26 +153,26 @@ OOVA.geoLocation = ( function( $ ) {
 	function _initialBuildOfList( data ) {
 
 		// initialize listData for other functions to use
-		listData = data;
+		// listData = data;
 
 		// loop through items in JSON
-		for( var key in data ) {
+		// for( var key in data ) {
 			
 			// populate list of LIs
-			listLIs += "<li><a href='#' data-id='" + data[ key ].id + "'>" + data[ key ].parkName + "</a></li>";
+			// listLIs += "<li><a href='#' data-id='" + data[ key ].id + "'>" + data[ key ].parkName + "</a></li>";
 
 			// populate other UI elements
-			_updateUIElements( data, key );
-		}
+			// _updateUIElements( data, key );
+		// }
 
 		// get last item's values form JSON list
-		tackContent = _tackBubbleMessage( data[ data.length-1 ].parkName, data[ data.length-1 ].siteNum );
+		// tackContent = _tackBubbleMessage( data[ data.length-1 ].parkName, data[ data.length-1 ].siteNum );
 
 		// populate UL with the LIs
-		$( listUL ).html( listLIs );
+		// $( listUL ).html( listLIs );
 
 		// assign last item in list a color
-		_currentLinkColor( $( listUL + " li a[data-id=" + data[ data.length-1 ].id + "]" ), currentLinkColor );
+		// _currentLinkColor( $( listUL + " li a[data-id=" + data[ data.length-1 ].id + "]" ), currentLinkColor );
 		
 		// render the map with the last item in list from JSON
         // _showMap( data[ data.length-1 ].lat, data[ data.length-1 ].long );
@@ -185,7 +185,7 @@ OOVA.geoLocation = ( function( $ ) {
     */
 	function _tackBubbleMessage( parkName, siteNum ) {
 
-		return "<span>" + parkName + "</span><br>Site: " + ( siteNum || 'N/A' );
+		// return "<span>" + parkName + "</span><br>Site: " + ( siteNum || 'N/A' );
 	}
 	/*
     -------------------------------------------------------------
@@ -199,13 +199,13 @@ OOVA.geoLocation = ( function( $ ) {
 			if( parseInt( id ) == parseInt( listData[ key ].id ) ) {
 
 				// populate other UI elements with clicked on item's data from JSON
-				_updateUIElements( listData, key );
+				// _updateUIElements( listData, key );
 
 				// get clicked on item's values form JSON list
-				tackContent = _tackBubbleMessage( listData[ key ].parkName, listData[ key ].siteNum );
+				// tackContent = _tackBubbleMessage( listData[ key ].parkName, listData[ key ].siteNum );
 				
 				// render the map with clicked on item from JSON
-				_showMap( listData[ key ].lat, listData[ key ].long );
+				// _showMap( listData[ key ].lat, listData[ key ].long );
 			}		
 		}
 	}
@@ -215,18 +215,18 @@ OOVA.geoLocation = ( function( $ ) {
 	function _visitedLinkColors( link, visitedColor, currentColor ) {
 
 		// loop through all a tags and assign a color
-		$( listLink ).each( function() {
+		// $( listLink ).each( function() {
 
 			// for all links that were visited ( have style attribute )
-			if( $( this ).attr( 'style' ) ) {
+			// if( $( this ).attr( 'style' ) ) {
 
 				// retain visited color 
-				$( this ).css( 'color', visitedColor );
-			}
-		});
+				// $( this ).css( 'color', visitedColor );
+			// }
+		// });
 
 		// pass the current clicked on link 
-		_currentLinkColor( link, currentColor );
+		// _currentLinkColor( link, currentColor );
 	}
 	/*
     -------------------------------------------------------------
@@ -234,39 +234,43 @@ OOVA.geoLocation = ( function( $ ) {
     function _currentLinkColor( link, color ) {
 
     	// change color of current link
-    	link.css( 'color', color );
+    	// link.css( 'color', color );
     }
     /*
     -------------------------------------------------------------
     */
-	function _init() {
+	function _init( lati, long ) {
+        console.log( 'three' );
+        
+        _showMap( lati, long );
 
 		// grab item values from JSON file
-		$.getJSON( "./dataCampingTrips.json", function( data ) {
+		// $.getJSON( "./dataCampingTrips.json", function( data ) {
 			
 			// once JSON data is taken, build the list
-			_initialBuildOfList( data );	
+			// _initialBuildOfList( data );	
 
 			// click event on every link created from JSON items
-			$( listLink ).on( 'click', function( e ) {
+			// $( listLink ).on( 'click', function( e ) {
 
-				e.preventDefault();
+				// e.preventDefault();
 
 				// once a link clicked, give it a color
-				_visitedLinkColors( $( this ), visitedLinkColor, currentLinkColor );
+				// _visitedLinkColors( $( this ), visitedLinkColor, currentLinkColor );
 
 				// update UI with values from item clicked
-				_changeUIPerClick( $( this ).attr( 'data-id' ) );
-			});
-		});
-	}
+				// _changeUIPerClick( $( this ).attr( 'data-id' ) );
+			// });
+		// });
+    }
+    
 	/*
     -------------------------------------------------------------
     PUBLIC INTERFACE
     -------------------------------------------------------------
     */
     return {
-    	init: _init
+        init: _init
     };
     /*
     -------------------------------------------------------------
@@ -274,7 +278,5 @@ OOVA.geoLocation = ( function( $ ) {
 })( jQuery );
 
 $( document ).ready( function() {
-
-	OOVA.geoLocation.init();
+    window.OOVA.geoLocation.init( lati, long );
 });
-
