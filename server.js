@@ -32,7 +32,8 @@ const Server = function() {
         self.app.get( '/trip/:tripId', function( req, res ) {
             
             res.render( 'pages/trip_page', {
-                thetrip: 'hello'
+                tripId: req.params.tripId,
+                theTrip: myApp.individualTrip( req.params.tripId )
             });
         });
         // --------------------------------------------------

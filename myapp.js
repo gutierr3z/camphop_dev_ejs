@@ -50,7 +50,7 @@ var MYAPP = ( function() {
             if( item.tripNumber == 'num' ) {
                 trip = item;
             }
-            return 'trip';
+            return trip;
         });
     };
     /*
