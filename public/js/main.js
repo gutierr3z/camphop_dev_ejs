@@ -101,7 +101,7 @@ window.OOVA.geoLocation = ( function( $ ) {
 	/*
     -------------------------------------------------------------
     */
-    
+
 	function _addMarker( map, latlong, content ) {
 		
 		// create an instance of a marker image
@@ -139,10 +139,12 @@ window.OOVA.geoLocation = ( function( $ ) {
 
 			infoWindow.open( map );
 		});
-	}
+    }
+    
 	/*
     -------------------------------------------------------------
     */
+    
 	function _updateUIElements( data, key ) {
 
     	// $( campDate ).html( data[ key ].date || 'N/A' );
