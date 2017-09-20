@@ -192,14 +192,16 @@ window.OOVA.geoLocation = ( function( $ ) {
 	/*
     -------------------------------------------------------------
     */
-    
+
 	function _tackBubbleMessage( parkName, siteNum ) {
 
 		// return "<span>" + parkName + "</span><br>Site: " + ( siteNum || 'N/A' );
-	}
+    }
+    
 	/*
     -------------------------------------------------------------
     */
+    
 	function _changeUIPerClick( id ) {
 		
 		// loop through items in JSON
