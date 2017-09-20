@@ -32,15 +32,14 @@ const Server = function() {
         self.app.get( '/trip/:tripId', function( req, res ) {
             
             res.render( 'pages/trip_page', {
-                tripId: req.params.tripId,
-                theTrip: myApp.individualTrip( req.params.tripId )
+                thetripx: 'hello'
             });
         });
         // --------------------------------------------------
         // about
         self.app.get( '/about', function( req, res ) {
             
-            res.render( 'pages/about', {});
+            res.render( 'pages/about', {} );
         });
         // --------------------------------------------------
         // Serve public directories
