@@ -61,7 +61,6 @@ var MYAPP = ( function() {
 
         self.obj = {};
 
-
         this.trips.forEach( function( item ) {
             if( item.tripNumber == x ) {
                 self.obj = item;
