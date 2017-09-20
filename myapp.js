@@ -98,7 +98,6 @@ var MYAPP = ( function() {
         // };
     };
 
-
     return myObj;
 
 // })( typeof exports === 'undefined' ? this.share = {} : exports );
