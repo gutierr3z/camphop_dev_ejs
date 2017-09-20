@@ -1,39 +1,36 @@
 var express     = require( 'express' );
-var pgp         = require( 'pg-promise' )(/*options*/)
 var path        = require ( 'path' );
 
 const myApp     = require ( './myapp' );
 
-// const config = require( './config.json' );
-
-// console.log( 'config=%o', config );
-
-myApp.db = pgp( 'postgres://postgres:oova@localhost:5432/camping' );
+// myApp.db = pgp( 'postgres://postgres:oova@localhost:5432/camping' );
 // myApp.db = pgp( 'postgres://postgres:oova@localhost:5433/camping' );
 // myApp.db = pgp( 'postgres://lipotmujqxlpqp:942c5578a0c0cd60928ae78651b4134f9a74b859a06c3be8934fa2b9ef395c50@ec2-107-22-211-182.compute-1.amazonaws.com:5432/d232e3aq43o7fj' );
 
-// console.log( 'xxxxxlocxxx', local.connect() );
-// console.log( 'xxxxxherxxx', hero.connect() );
 
 const Server = function() {
 
-    this.setupVariables = function() {
+    var self = this;
 
-        this.port = process.env.PORT || 8080;
+    self.setupVariables = function() {
+
+        self.myApp = myApp;
+        // self.myApp.db = pgp( 'postgres://postgres:oova@localhost:5432/camping' );
+        self.port = process.env.PORT || 8080;
     };
 
-    this.initializeServer = function() {
+    self.initializeServer = function() {
         
         var trips = myApp.listOfTrips();
         
-        this.app    = express();
+        self.app    = express();
 
-        this.app.set( 'views', __dirname + '/views' ); // optional since express defaults to CWD/views 
-        this.app.set( 'view engine', 'ejs' );
+        self.app.set( 'views', __dirname + '/views' ); // optional since express defaults to CWD/views 
+        self.app.set( 'view engine', 'ejs' );
 
         // --------------------------------------------------
         // landing page
-        this.app.get( '/', function( req, res ) {
+        self.app.get( '/', function( req, res ) {
 
             res.render( 'pages/index', {
                 trips: trips
@@ -41,7 +38,8 @@ const Server = function() {
         });
         
         // --------------------------------------------------
-        this.app.get( '/trip/:tripId', function( req, res ) {
+        // trip pages
+        self.app.get( '/trip/:tripId', function( req, res ) {
             
             res.render( 'pages/trip_page', {
                 tripId: req.params.tripId,
@@ -51,29 +49,29 @@ const Server = function() {
         });
         // --------------------------------------------------
         // about
-        this.app.get( '/about', function( req, res ) {
+        self.app.get( '/about', function( req, res ) {
             
             res.render( 'pages/about', {});
         });
         // --------------------------------------------------
         // Serve public directories
-        this.app.use( express.static( path.join( __dirname, 'public' ) ) );
-        this.app.use( express.static( path.join( __dirname, 'lib' ) ) );
+        self.app.use( express.static( path.join( __dirname, 'public' ) ) );
+        self.app.use( express.static( path.join( __dirname, 'lib' ) ) );
     };
 
-    this.initialize = function() {
+    self.initialize = function() {
 
-        this.setupVariables();
+        self.setupVariables();
         
         // Create express server and routes
-        this.initializeServer();
+        self.initializeServer();
     };
 
-    this.start = function() {
+    self.start = function() {
 
-        this.app.listen( this.port, function() {
+        self.app.listen( self.port, function() {
 
-            console.log( 'Node Server started on...', Date( Date.now() ), this.port );
+            console.log( 'Node Server started on...', Date( Date.now() ), self.port );
         });
     };
 };

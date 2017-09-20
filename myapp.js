@@ -1,21 +1,31 @@
-( function( exports ) {
+// ( function( exports ) {
+var MYAPP = ( function() {
 
-    exports.sql = {
+    var myObj = {};
+
+    var pgp = require( 'pg-promise' )(/*options*/)
+    var db = pgp( 'postgres://postgres:oova@localhost:5432/camping' );
+    // db = pgp( 'postgres://postgres:oova@localhost:5433/camping' );
+    // db = pgp( 'postgres://lipotmujqxlpqp:942c5578a0c0cd60928ae78651b4134f9a74b859a06c3be8934fa2b9ef395c50@ec2-107-22-211-182.compute-1.amazonaws.com:5432/d232e3aq43o7fj' );
+
+
+    console.log( 'hello', myObj );
+
+    sql = {
         trips: 'SELECT * FROM tbl_trips AS trips JOIN tbl_campgrounds AS camp ON trips.fld_campground_id::int = camp.id ORDER BY trips.id DESC',
         trip: 'SELECT * FROM tbl_trips WHERE fld_trip_number = '
     };
 
-    exports.trips = [];
-    exports.trip;
-
-    exports.xxx = {};
+    myObj.trips = [];
+    myObj.trip;
     
     // HOME
-    exports.listOfTrips = function() {
+    myObj.listOfTrips = function() {
 
         var self = this;
  
-        self.db.any( self.sql.trips, [true] ).then( function( data ) {
+        // self.db.any( self.sql.trips, [true] ).then( function( data ) {
+        db.any( sql.trips, [true] ).then( function( data ) {
 
             data.forEach( function( item ) {
                 self.trips.push({
@@ -48,7 +58,7 @@
     //                 console.log( error );
     //             });
 
-    exports.individualTrip = function( x ) {
+    myObj.individualTrip = function( x ) {
 
         var self = this;
 
@@ -101,4 +111,22 @@
     };
 
 
-})( typeof exports === 'undefined' ? this.share = {} : exports );
+    return myObj;
+
+// })( typeof exports === 'undefined' ? this.share = {} : exports );
+// })( exports );
+})();
+
+module.exports = MYAPP;
+
+/*
+same as saying, as the signature, an expression:
+
+if( ( typeof exports ) === 'undefined' ) {
+    // you are in the browser, pass into func an empty object
+    return window.share = {};
+} else {
+    // you are in node, pass in exports object
+    return exports;
+}
+*/
