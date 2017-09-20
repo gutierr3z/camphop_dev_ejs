@@ -96,10 +96,12 @@ window.OOVA.geoLocation = ( function( $ ) {
 
 		// add marker to the map
 		_addMarker( map, googleLatAndLong, tackContent );
-	}
+    }
+    
 	/*
     -------------------------------------------------------------
     */
+    
 	function _addMarker( map, latlong, content ) {
 		
 		// create an instance of a marker image
