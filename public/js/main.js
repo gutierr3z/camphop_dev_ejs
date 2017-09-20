@@ -256,7 +256,7 @@ window.OOVA.geoLocation = ( function( $ ) {
     /*
     -------------------------------------------------------------
     */
-    
+
 	function _init( lati, long ) {
         console.log( 'three' );
         
@@ -287,6 +287,7 @@ window.OOVA.geoLocation = ( function( $ ) {
     PUBLIC INTERFACE
     -------------------------------------------------------------
     */
+    
     return {
         init: _init
     };
