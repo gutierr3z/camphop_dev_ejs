@@ -70,9 +70,6 @@ var MYAPP = ( function() {
         return self.obj;
             
 
-
-
-
         // return function( itemx ) {
             
         //     self.db.any( `SELECT * FROM tbl_trips WHERE fld_trip_number = '${ itemx }'`, [true] ).then( function( data ) {
