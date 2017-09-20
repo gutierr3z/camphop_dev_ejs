@@ -1,12 +1,6 @@
 var express     = require( 'express' );
 var path        = require ( 'path' );
-
 const myApp     = require ( './myapp' );
-
-// myApp.db = pgp( 'postgres://postgres:oova@localhost:5432/camping' );
-// myApp.db = pgp( 'postgres://postgres:oova@localhost:5433/camping' );
-// myApp.db = pgp( 'postgres://lipotmujqxlpqp:942c5578a0c0cd60928ae78651b4134f9a74b859a06c3be8934fa2b9ef395c50@ec2-107-22-211-182.compute-1.amazonaws.com:5432/d232e3aq43o7fj' );
-
 
 const Server = function() {
 
@@ -14,14 +8,10 @@ const Server = function() {
 
     self.setupVariables = function() {
 
-        self.myApp = myApp;
-        // self.myApp.db = pgp( 'postgres://postgres:oova@localhost:5432/camping' );
         self.port = process.env.PORT || 8080;
     };
 
     self.initializeServer = function() {
-        
-        var trips = myApp.listOfTrips();
         
         self.app    = express();
 
@@ -33,7 +23,7 @@ const Server = function() {
         self.app.get( '/', function( req, res ) {
 
             res.render( 'pages/index', {
-                trips: trips
+                trips: myApp.listOfTrips()
             });
         });
         
@@ -43,7 +33,6 @@ const Server = function() {
             
             res.render( 'pages/trip_page', {
                 tripId: req.params.tripId,
-                // theTrip: trip( req.params.tripId )
                 theTrip: myApp.individualTrip( req.params.tripId )
             });
         });
@@ -62,8 +51,6 @@ const Server = function() {
     self.initialize = function() {
 
         self.setupVariables();
-        
-        // Create express server and routes
         self.initializeServer();
     };
 
