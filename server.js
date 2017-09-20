@@ -32,7 +32,7 @@ const Server = function() {
         self.app.get( '/trip/:tripId', function( req, res ) {
             
             res.render( 'pages/trip_page', {
-                thetripx: 'hello'
+                thetrip: 'hello'
             });
         });
         // --------------------------------------------------
