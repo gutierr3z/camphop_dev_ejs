@@ -252,10 +252,11 @@ window.OOVA.geoLocation = ( function( $ ) {
     	// change color of current link
     	// link.css( 'color', color );
     }
-    
+
     /*
     -------------------------------------------------------------
     */
+    
 	function _init( lati, long ) {
         console.log( 'three' );
         
