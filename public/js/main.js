@@ -225,7 +225,7 @@ window.OOVA.geoLocation = ( function( $ ) {
 	/*
     -------------------------------------------------------------
     */
-    
+
 	function _visitedLinkColors( link, visitedColor, currentColor ) {
 
 		// loop through all a tags and assign a color
@@ -241,10 +241,12 @@ window.OOVA.geoLocation = ( function( $ ) {
 
 		// pass the current clicked on link 
 		// _currentLinkColor( link, currentColor );
-	}
+    }
+    
 	/*
     -------------------------------------------------------------
     */
+    
     function _currentLinkColor( link, color ) {
 
     	// change color of current link
