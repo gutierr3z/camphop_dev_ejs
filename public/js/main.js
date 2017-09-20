@@ -157,7 +157,7 @@ window.OOVA.geoLocation = ( function( $ ) {
 	/*
     -------------------------------------------------------------
     */
-    
+
 	function _initialBuildOfList( data ) {
 
 		// initialize listData for other functions to use
@@ -187,10 +187,12 @@ window.OOVA.geoLocation = ( function( $ ) {
         _showMap( '40.872302', '-74.808693' );
         
 		
-	}
+    }
+    
 	/*
     -------------------------------------------------------------
     */
+    
 	function _tackBubbleMessage( parkName, siteNum ) {
 
 		// return "<span>" + parkName + "</span><br>Site: " + ( siteNum || 'N/A' );
