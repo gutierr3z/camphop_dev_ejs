@@ -246,12 +246,13 @@ window.OOVA.geoLocation = ( function( $ ) {
 	/*
     -------------------------------------------------------------
     */
-    
+
     function _currentLinkColor( link, color ) {
 
     	// change color of current link
     	// link.css( 'color', color );
     }
+    
     /*
     -------------------------------------------------------------
     */
