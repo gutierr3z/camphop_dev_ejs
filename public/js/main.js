@@ -144,7 +144,7 @@ window.OOVA.geoLocation = ( function( $ ) {
 	/*
     -------------------------------------------------------------
     */
-    
+
 	function _updateUIElements( data, key ) {
 
     	// $( campDate ).html( data[ key ].date || 'N/A' );
@@ -153,9 +153,11 @@ window.OOVA.geoLocation = ( function( $ ) {
 		// $( campLong ).html( data[ key ].long );
 		// $( header ).html( data[ key ].parkName );
     }
+
 	/*
     -------------------------------------------------------------
     */
+    
 	function _initialBuildOfList( data ) {
 
 		// initialize listData for other functions to use
