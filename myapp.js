@@ -67,7 +67,6 @@ var MYAPP = ( function() {
             }
         });
                 
-
         return self.obj;
             
 
