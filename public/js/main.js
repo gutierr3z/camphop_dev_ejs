@@ -291,10 +291,11 @@ window.OOVA.geoLocation = ( function( $ ) {
     return {
         init: _init
     };
-    
+
     /*
     -------------------------------------------------------------
     */
+    
 })( jQuery );
 
 $( document ).ready( function() {
