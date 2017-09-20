@@ -201,7 +201,7 @@ window.OOVA.geoLocation = ( function( $ ) {
 	/*
     -------------------------------------------------------------
     */
-    
+
 	function _changeUIPerClick( id ) {
 		
 		// loop through items in JSON
@@ -220,10 +220,12 @@ window.OOVA.geoLocation = ( function( $ ) {
 				// _showMap( listData[ key ].lat, listData[ key ].long );
 			}		
 		}
-	}
+    }
+    
 	/*
     -------------------------------------------------------------
     */
+    
 	function _visitedLinkColors( link, visitedColor, currentColor ) {
 
 		// loop through all a tags and assign a color
