@@ -5,6 +5,7 @@ window.OOVA.geoLocation = ( function( $ ) {
     PRIVATE PROPERTIES
     -------------------------------------------------------------
     */
+
 	var map = null,
 		listLIs = '',
 		listData = null,
@@ -21,7 +22,8 @@ window.OOVA.geoLocation = ( function( $ ) {
 		tackContent = '',
 
 		visitedLinkColor = '#999999',
-		currentLinkColor = '#ff9900';
+        currentLinkColor = '#ff9900';
+        
 	/*
     -------------------------------------------------------------
     PRIVATE METHODS
