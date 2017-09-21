@@ -40,8 +40,9 @@ var MYAPP = ( function() {
             });
         });
 
-        
+
         // console.log( "XXXX", trips );
+        
 
     }).catch( function( error ) {
 
