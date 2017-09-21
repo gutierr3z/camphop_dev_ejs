@@ -47,9 +47,11 @@ var MYAPP = ( function() {
     function _individualTrip( num ) {
 
         trips.forEach( function( item ) {
-            if( item.tripNumber == 'num' ) {
+            if( item.tripNumber == num ) {
                 trip = item;
+                return;
             }
+            console.log( 'tripxx:', trip );
             return trip;
         });
     };
