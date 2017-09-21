@@ -22,8 +22,9 @@ var MYAPP = ( function() {
     db.any( sql, [true] ).then( function( data ) {
         
         data.forEach( function( item ) {
-            
+
             console.log( 'item: ', item );
+            
             trips.push({
                 'id'                : item.fld_trip_id,
                 'campgroundId'      : item.fld_campground_id,
