@@ -310,6 +310,11 @@ START : Content
     background-size: cover;
 }
 
+.oo-map {
+    width: 100%;
+    height: 40vh;
+}
+
 /* /Trip Page : -------------------- */
 
 /*
