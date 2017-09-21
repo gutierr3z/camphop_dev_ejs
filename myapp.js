@@ -60,6 +60,7 @@ var MYAPP = ( function() {
     -------------------------------------------------------------
     */
     return {
+        
         listOfTrips: _listOfTrips,
         individualTrip: _individualTrip
     };
