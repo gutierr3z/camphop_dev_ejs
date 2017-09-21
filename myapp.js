@@ -50,10 +50,8 @@ var MYAPP = ( function() {
             if( item.tripNumber == num ) {
                 trip = item;
             }
-            
-            
         });
-        console.log( 'tripxx:', trip );
+        
         return trip;
     };
     /*
