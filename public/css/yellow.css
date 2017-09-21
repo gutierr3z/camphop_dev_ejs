@@ -306,12 +306,32 @@ START : Content
 
 .oo-hero {
     width: 100%;
-    height: 40vh;
+    height: 30vh;
 
     background-repeat: no-repeat;
     background-position: center center;
     background-size: cover;
     position: relative;
+}
+
+.oo-hero-header {
+    display: flex;
+}
+
+.oo-hero-header .oo-hero-title,
+.oo-hero-header .oo-hero-trip-num {
+    align-self: auto;
+    padding: 1.5vh 0px;
+    line-height: 1.25em;
+    font-size: 0.875em;
+}
+
+.oo-hero-header .oo-hero-trip-num {
+    padding: 0px;
+    margin: 0px;
+    background-color: #fed230;
+    text-align: center;
+    color: #000;
 }
 
 .oo-hero h1 {

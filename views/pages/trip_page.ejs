@@ -13,16 +13,19 @@
             <% include ../partials/header %>
             <!-- END : header -->
             
+            <div class="oo-hero-header">
+                <div class="oo-hero-trip-num"><%= theTrip.tripNumber %></div>
+                <div class="oo-hero-title"><%= theTrip.campgroundName %></div>
+            </div>
+
             <div class="oo-hero" style="background-image: url( '../images/cover_pic_<%= theTrip.tripNumber %>.jpg' );">
                 <h1><%= theTrip.campgroundName %></h1>
             </div>
 
-            <%= theTrip.tripNumber %><br>
-            <br>
             <%= theTrip.arrivalDate + ' to ' + theTrip.departureDate %><br>
-            <%= theTrip.siteNumber %><br>
-            <%= theTrip.latitude %><br>
-            <%= theTrip.longitude %><br>
+            Site Number: <%= theTrip.siteNumber %><br>
+            <%= theTrip.latitude %>, <%= theTrip.longitude %><br>
+            <br>
 
             <div id="oo-map"></div>
 

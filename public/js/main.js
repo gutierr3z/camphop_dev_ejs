@@ -37,7 +37,8 @@ window.OOVA.geoLocation = ( function( $ ) {
 		// map options
 		var mapOptions = {
 			zoom: 14,
-			center: new google.maps.LatLng((lati - .0040),long),
+            // center: new google.maps.LatLng((lati - .0040),long),
+            center: new google.maps.LatLng( lati, long ),
 			disableDefaultUI: true,
 			zoomControl: false,
 			// mapTypeId: google.maps.MapTypeId.HYBRID
@@ -295,7 +296,7 @@ window.OOVA.geoLocation = ( function( $ ) {
     /*
     -------------------------------------------------------------
     */
-    
+
 })( jQuery );
 
 $( document ).ready( function() {
