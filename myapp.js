@@ -13,15 +13,23 @@ var MYAPP = ( function() {
     // db = pgp( 'postgres://postgres:oova@localhost:5433/camping' );
     // db = pgp( 'postgres://lipotmujqxlpqp:942c5578a0c0cd60928ae78651b4134f9a74b859a06c3be8934fa2b9ef395c50@ec2-107-22-211-182.compute-1.amazonaws.com:5432/d232e3aq43o7fj' );
     
-    var sql = 'SELECT * FROM tbl_trips AS trips JOIN tbl_campgrounds AS camp ON trips.fld_campground_id::int = camp.id ORDER BY trips.id DESC'
+    var sql = 'SELECT * FROM tbl_trips AS trips JOIN tbl_campgrounds AS camp ON trips.fld_campground_id::int = camp.id ORDER BY trips.fld_trip_id DESC'
+    // var sql = 'SELECT * FROM tbl_trips LEFT JOIN tbl_campgrounds ON tbl_campgrounds.id = tbl_trips.fld_campground_id::int';
+    // var sql = 'SELECT id AS fld_trip_id, * FROM tbl_trips JOIN tbl_campgrounds ON tbl_trips.fld_campground_id::int = tbl_campgrounds.id ORDER BY tbl_trips.id DESC';
+    // var sql = 'SELECT * FROM tbl_trips';
+    
 
     db.any( sql, [true] ).then( function( data ) {
-
+        // console.log( 'data: ', data );
         data.forEach( function( item ) {
+            console.log( 'item: ', item );
             trips.push({
-                'id'                : item.id,
+                'id'                : item.fld_trip_id,
+                'campgroundId'      : item.fld_campground_id,
                 'tripNumber'        : item.fld_trip_number,
                 'campgroundName'    : item.fld_name,
+                'campgroundAddress' : item.fld_address,
+                'campgroundPhone'   : item.fld_phone,
                 'arrivalDate'       : item.fld_arrival_date,
                 'departureDate'     : item.fld_departure_date,
                 'siteNumber'        : item.fld_site_number,
@@ -32,10 +40,14 @@ var MYAPP = ( function() {
             });
         });
 
+        // console.log( "XXXX", trips );
+
     }).catch( function( error ) {
 
         console.log( error );
     });
+
+    
     /*
     -------------------------------------------------------------
     */
@@ -49,7 +61,7 @@ var MYAPP = ( function() {
     function _individualTrip( num ) {
 
         trips.forEach( function( item ) {
-            if( item.tripNumber == num ) {
+            if( item.id == num ) {
                 trip = item;
             }
         });
@@ -60,7 +72,7 @@ var MYAPP = ( function() {
     -------------------------------------------------------------
     */
     return {
-        
+
         listOfTrips: _listOfTrips,
         individualTrip: _individualTrip
     };
