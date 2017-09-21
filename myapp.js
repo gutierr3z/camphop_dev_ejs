@@ -57,8 +57,9 @@ var MYAPP = ( function() {
     function _individualTrip( num ) {
 
         trips.forEach( function( item ) {
-            
+
             if( item.id == num ) {
+                
                 trip = item;
             }
         });
