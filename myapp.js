@@ -49,7 +49,7 @@ var MYAPP = ( function() {
         trips.forEach( function( item ) {
             if( item.tripNumber == num ) {
                 trip = item;
-                return;
+                break;
             }
             console.log( 'tripxx:', trip );
             return trip;
