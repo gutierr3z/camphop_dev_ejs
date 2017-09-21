@@ -59,7 +59,7 @@ var MYAPP = ( function() {
         trips.forEach( function( item ) {
 
             if( item.id == num ) {
-                
+
                 trip = item;
             }
         });
@@ -78,6 +78,7 @@ var MYAPP = ( function() {
     -------------------------------------------------------------
     */
 })();
+
 module.exports = MYAPP;
 
 // ( function( exports ) {
