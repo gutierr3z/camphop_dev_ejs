@@ -74,10 +74,11 @@ var MYAPP = ( function() {
         listOfTrips: _listOfTrips,
         individualTrip: _individualTrip
     };
-    
+
     /*
     -------------------------------------------------------------
     */
+    
 })();
 
 module.exports = MYAPP;
