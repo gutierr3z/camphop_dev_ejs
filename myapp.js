@@ -49,11 +49,12 @@ var MYAPP = ( function() {
         trips.forEach( function( item ) {
             if( item.tripNumber == num ) {
                 trip = item;
-                break;
             }
-            console.log( 'tripxx:', trip );
-            return trip;
+            
+            
         });
+        console.log( 'tripxx:', trip );
+        return trip;
     };
     /*
     -------------------------------------------------------------
