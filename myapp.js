@@ -41,7 +41,6 @@ var MYAPP = ( function() {
         });
 
 
-        
 
 
     }).catch( function( error ) {
