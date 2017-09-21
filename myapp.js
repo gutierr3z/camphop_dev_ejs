@@ -18,7 +18,6 @@ var MYAPP = ( function() {
     // var sql = 'SELECT id AS fld_trip_id, * FROM tbl_trips JOIN tbl_campgrounds ON tbl_trips.fld_campground_id::int = tbl_campgrounds.id ORDER BY tbl_trips.id DESC';
     // var sql = 'SELECT * FROM tbl_trips';
 
-
     db.any( sql, [true] ).then( function( data ) {
         
         data.forEach( function( item ) {
