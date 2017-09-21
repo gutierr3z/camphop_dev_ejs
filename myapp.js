@@ -23,8 +23,8 @@ var MYAPP = ( function() {
         
         data.forEach( function( item ) {
 
-            console.log( 'item: ', item );
             
+
             trips.push({
                 'id'                : item.fld_trip_id,
                 'campgroundId'      : item.fld_campground_id,
