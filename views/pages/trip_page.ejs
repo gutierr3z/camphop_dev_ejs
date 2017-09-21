@@ -13,14 +13,12 @@
             <% include ../partials/header %>
             <!-- END : header -->
             
-            <div class="oo-hero red" style="background-image: url( '../images/cover_pic_<%= theTrip.tripNumber %>.jpg' );">
-                asdf
+            <div class="oo-hero" style="background-image: url( '../images/cover_pic_<%= theTrip.tripNumber %>.jpg' );">
+                <h1><%= theTrip.campgroundName %></h1>
             </div>
 
-            
-
             <%= theTrip.tripNumber %><br>
-            <%= theTrip.campgroundName %><br>
+            <br>
             <%= theTrip.arrivalDate + ' to ' + theTrip.departureDate %><br>
             <%= theTrip.siteNumber %><br>
             <%= theTrip.latitude %><br>
