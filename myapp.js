@@ -13,6 +13,7 @@ var MYAPP = ( function() {
     // db = pgp( 'postgres://postgres:oova@localhost:5433/camping' );
     // db = pgp( 'postgres://lipotmujqxlpqp:942c5578a0c0cd60928ae78651b4134f9a74b859a06c3be8934fa2b9ef395c50@ec2-107-22-211-182.compute-1.amazonaws.com:5432/d232e3aq43o7fj' );
     
+    // camphop-dev-ejs
     // var db = pgp( 'postgres://luxowkmubxfllq:a3922fea02593861c9e5553a829395036cf35058c5b41726828d86b089c9da1c@ec2-23-23-111-171.compute-1.amazonaws.com:5432/d59ku4cv3n09c9' );
 
     var sql = 'SELECT * FROM tbl_trips JOIN tbl_campgrounds ON fld_trip_camp_id::int = fld_camp_id ORDER BY fld_trip_id DESC'
