@@ -15,11 +15,7 @@ var MYAPP = ( function() {
     
     // var db = pgp( 'postgres://luxowkmubxfllq:a3922fea02593861c9e5553a829395036cf35058c5b41726828d86b089c9da1c@ec2-23-23-111-171.compute-1.amazonaws.com:5432/d59ku4cv3n09c9' );
 
-
     var sql = 'SELECT * FROM tbl_trips JOIN tbl_campgrounds ON fld_trip_camp_id::int = fld_camp_id ORDER BY fld_trip_id DESC'
-    // var sql = 'SELECT * FROM tbl_trips LEFT JOIN tbl_campgrounds ON tbl_campgrounds.id = tbl_trips.fld_campground_id::int';
-    // var sql = 'SELECT id AS fld_trip_id, * FROM tbl_trips JOIN tbl_campgrounds ON tbl_trips.fld_campground_id::int = tbl_campgrounds.id ORDER BY tbl_trips.id DESC';
-    // var sql = 'SELECT * FROM tbl_campgrounds';
 
     db.any( sql, [true] ).then( function( data ) {
         console.log( 'data:', data );
