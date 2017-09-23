@@ -48,15 +48,13 @@ START : Content
 /* /Overwrites : -------------------- */
 
 .oo-spot .oo-full-logo {
-    background-size: 50vw;
-    height: 58vh;
+    background-size: 48vh;
+    height: 30vh;
     max-height: 30vh;
 }
 
 .oo-spot .oo-msg {
     padding: 30px 18% 50px;
-    font-size: 1.563em;
-    line-height: 1.375em;
 }
 
 .oo-spot .oo-decoration {
@@ -81,6 +79,13 @@ START : Content
 .oo-gallery .row > a .oo-pic-block p {
     padding-top: 2vh;
     padding-bottom: 2vh;
+}
+
+/* Trip Page : -------------------- */
+
+.oo-hero {
+    height: 48vh;
+    max-height: 48vh;
 }
 
 /*

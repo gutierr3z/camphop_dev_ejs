@@ -13,12 +13,15 @@
             <% include ../partials/header %>
             <!-- END : header -->
             
-            <div class="oo-hero-header">
-                <div class="oo-hero-trip-num"><%= theTrip.tripNumber %></div>
-                <div class="oo-hero-title"><%= theTrip.campgroundName %></div>
-            </div>
+            
 
-            <div class="oo-hero" style="background-image: url( '../images/cover_pic_<%= theTrip.tripNumber %>.jpg' );">
+            <div class="oo-hero" style="background-image: url( '../images/jumbo_<%= theTrip.tripNumber %>.jpg' );">
+
+                <div class="oo-hero-header">
+                    <div class="oo-hero-trip-num"><%= theTrip.tripNumber %></div>
+                    <div class="oo-hero-title"><%= theTrip.campgroundName %></div>
+                </div>
+                
                 <h1><%= theTrip.campgroundName %></h1>
             </div>
 

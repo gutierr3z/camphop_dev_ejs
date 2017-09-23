@@ -48,8 +48,20 @@ START : Content
 /* /Overwrites : -------------------- */
 
 .oo-spot .oo-full-logo {
-    background-size: 40vw;
-    height: 45vh;
+    background-size: 65vh;
+    height: 42vh;
+    max-height: 42vh;
+}
+
+.oo-spot .oo-msg {
+    /* font-size: 2em; */
+}
+
+/* Trip Page : -------------------- */
+
+.oo-hero {
+    height: 55vh;
+    max-height: 55vh;
 }
 
 /*

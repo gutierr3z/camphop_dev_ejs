@@ -115,8 +115,14 @@ START : Content
 }
 
 .oo-spot .oo-full-logo {
-    background-size: 70vw;
+    background-size: 50vh;
     height: 34vh;
+    max-height: 34vh;
+}
+
+.oo-spot .oo-msg {
+    font-size: 2em;
+    line-height: 1.20em;
 }
 
 .oo-spot .oo-decoration {
@@ -140,6 +146,13 @@ START : Content
     padding-top: 1vh;
     padding-bottom: 1vh;
     font-size: 1em;
+}
+
+/* Trip Page : -------------------- */
+
+.oo-hero {
+    height: 50vh;
+    max-height: 50vh;
 }
 
 /*
