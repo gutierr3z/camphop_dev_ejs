@@ -202,8 +202,6 @@ START : Content
 .oo-spot .oo-full-logo {
     text-align: center;
     padding: 30px;
-    
-
     background: url( ../images/logo.svg );
     background-repeat: no-repeat;
     background-position: center center;
