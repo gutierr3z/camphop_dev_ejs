@@ -73,9 +73,6 @@ var MYAPP = ( function() {
 
 
 
-        
-
-
         return trip;
     };
     /*
