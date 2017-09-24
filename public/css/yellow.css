@@ -527,6 +527,11 @@ START : Content
     height: 20vmax;
     font-size: 2vmax;
     flex-basis: 49%;
+
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
 }
 
 /* /Trip Page : -------------------- */
