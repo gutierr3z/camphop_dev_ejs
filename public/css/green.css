@@ -72,6 +72,10 @@ START : Header
     border: 0px;
     border-left: 1px solid #d3d0c5;
     
+    background-image: url( ../images/icon_nav_fire.svg );
+    background-repeat: no-repeat;
+    background-position: 35px center;
+    background-size: 10%;
 }
 
 .navbar-default .navbar-nav > li > a {
