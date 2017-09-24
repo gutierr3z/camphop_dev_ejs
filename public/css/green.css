@@ -42,6 +42,13 @@ START : Header
     line-height: 20px;
 }
 
+a.oo-brand:visited,
+a.oo-brand:hover,
+a.oo-brand {
+    max-height: 70px;
+    height: 70px;
+}
+
 #oo-the-nav {
     background-color: transparent;
     float: right;
@@ -70,12 +77,12 @@ START : Header
 
 .navbar-nav > li {
     border: 0px;
-    border-left: 1px solid #d3d0c5;
+    border-left: 1px solid #dedcd3;
     
-    background-image: url( ../images/icon_nav_fire.svg );
+    /* background-image: url( ../images/icon_nav_fire.svg );
     background-repeat: no-repeat;
     background-position: 35px center;
-    background-size: 10%;
+    background-size: 10%; */
 }
 
 .navbar-default .navbar-nav > li > a {
@@ -85,7 +92,7 @@ START : Header
 
 .navbar-default .navbar-nav > li > a:hover,
 .navbar-default .navbar-nav > li > a {
-    padding: 25px 50px;
+    padding: 25px 40px;
     font-size: 1em;
     color: #db0000;
 }
@@ -102,7 +109,7 @@ START : Header
 }
 
 a.oo-brand {
-    margin-top: 6px;
+    /* margin-top: 6px; */
 }
 
 /*
