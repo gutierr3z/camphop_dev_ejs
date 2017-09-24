@@ -365,27 +365,28 @@ START : Content
 }
 
 .oo-hero-header .oo-hero-trip-num p {
-    font-size: 5vw;
     padding: 0px;
     margin: 0px auto;
     align-self: center;
-    display: none;
+
+    font-size: 4vw;
 }
 
 .oo-hero-header .oo-hero-title p {
     /* font-family: 'Amatic SC'; */
     font-family: 'amatic_scregular';
-    letter-spacing: -.5vh;
     text-shadow: 1px 1px rgba( 0, 0, 0, 0.5 );
     color: #fff;
     margin: 0px;
     padding: 0px;
     
-    font-size: 12vw;
     padding-left: 2vw;
     padding-right: 3vw;
+
     align-self: center;
-    display: none;
+
+    letter-spacing: -.6vw;
+    font-size: 10vw;
 }
 
 .oo-hero h1 {
@@ -410,27 +411,29 @@ START : Content
     color: #fff;
     padding: 3vh 6vh;
     border-bottom: 1px solid #a6a191;
-
     font-family: 'Roboto Condensed', sans-serif;
+
     letter-spacing: -.03em;
-    padding: 1.5vh 3vh;
-    font-size: 2vh;
-    line-height: 3vh;
+    padding: 3vw 3vw;
+    font-size: 4vw;
+    line-height: 5.5vw;
 }
 
 .oo-info > div:nth-child( odd ) {
     color: #7e7b72;
     text-align: right;
-    background-color: #d3d0c5;
-    border-bottom: 1px solid #bdbaad;
-    flex-basis: 35%;
+    background-color: #eae9e4;
+    border-bottom: 1px solid #deddd8;
+
+    flex-basis: 40%;
 }
 
 .oo-info > div:nth-child( even ) {
     color: #7e7b72;
-    background-color: #f0eee5;
-    border-bottom: 1px solid #d3d0c5;
-    flex-basis: 65%;
+    background-color: #f8f8f8;
+    border-bottom: 1px solid #ecebeb;
+
+    flex-basis: 60%;
 }
 
 #oo-map {

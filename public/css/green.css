@@ -182,19 +182,18 @@ START : Content
 }
 
 .oo-hero-header .oo-hero-trip-num p {
-    font-size: 4vw;
+    font-size: 3.5vw;
 }
 
 .oo-hero-header .oo-hero-title p {
-    padding-left: 2vw;
-    padding-right: 2vw;
-    font-size: 9vw;
+    letter-spacing: -.4vw;
+    font-size: 8vw;
 }
 
 .oo-info > div {
-    padding: 1vh 3vh;
-    font-size: 1.7vh;
-    line-height: 4vh;
+    padding: 2vw 3vw;
+    font-size: 2vw;
+    line-height: 3.5vw;
 }
 
 .oo-info > div:nth-child( odd ) {
