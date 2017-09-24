@@ -385,7 +385,7 @@ START : Content
 
     align-self: center;
 
-    letter-spacing: -.6vw;
+    letter-spacing: -.7vw;
     font-size: 10vw;
 }
 
@@ -417,6 +417,17 @@ START : Content
     padding: 3vw 3vw;
     font-size: 4vw;
     line-height: 5.5vw;
+}
+
+.oo-trip-desc {
+    letter-spacing: -.03em;
+    padding: 6vw;
+    font-size: 4vw;
+    line-height: 5.5vw;
+
+    color: #7e7b72;
+    background-color: #eae9e4;
+    border-bottom: 1px solid #deddd8;
 }
 
 .oo-info > div:nth-child( odd ) {

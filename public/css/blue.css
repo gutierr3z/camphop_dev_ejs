@@ -107,6 +107,12 @@ START : Content
     line-height: 3.5vw;
 }
 
+.oo-trip-desc {
+    padding: 4vw 5vw;
+    font-size: 1.8vw;
+    line-height: 3.5vw;
+}
+
 .oo-info > div:nth-child( odd ) {
     /* flex-basis: 25%; */
 }
