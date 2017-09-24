@@ -97,49 +97,49 @@ START : Content
 /* Trip Page : -------------------- */
 
 .oo-hero {
-    height: 30vw;
-    max-height: 30vw;
+    /* height: 30vw; */
+    /* max-height: 30vw; */
 }
 
 .oo-hero-header .oo-hero-trip-num {
     /* height: 10vh; */
 
-    height: 10vw;
+    /* height: 10vw; */
     flex-basis: 15%;
 }
 
 .oo-hero-header .oo-hero-title {
     /* height: 10vh; */
 
-    height: 10vw;
+    /* height: 10vw; */
     flex-basis: 85%;
 }
 
 .oo-hero-header .oo-hero-trip-num p {
-    font-size: 3vw;
+    /* font-size: 3vw; */
 }
 
 .oo-hero-header .oo-hero-title p {
-    letter-spacing: -.3vw;
-    font-size: 6vw;
+    /* letter-spacing: -.3vw; */
+    /* font-size: 6vw; */
 }
 
 .oo-info > div {
-    padding: 1.5vw 3vw;
+    /* padding: 1.5vw 3vw;
     font-size: 2.5vw;
-    line-height: 4vw;
+    line-height: 4vw; */
 }
 
 .oo-info .oo-site-number {
-    width: 5vw;
+    /* width: 5vw;
     height: 5vw;
-    line-height: 5vw;
+    line-height: 5vw; */
 }
 
 .oo-trip-desc {
-    padding: 4vw;
-    font-size: 2.5vw;
-    line-height: 4vw;
+    /* padding: 4vw; */
+    /* font-size: 2.5vw; */
+    /* line-height: 4vw; */
 }
 
 .oo-info > div:nth-child( odd ) {

@@ -68,25 +68,25 @@ START : Content
 .oo-hero {
     /* height: 55vh; */
     /* max-height: 55vh; */
-    height: 30vw;
-    max-height: 30vw;
+    /* height: 30vw; */
+    /* max-height: 30vw; */
 }
 
 .oo-hero-header .oo-hero-trip-num {
-    height: 7vw;
+    /* height: 7vw; */
 }
 
 .oo-hero-header .oo-hero-title {
-    height: 7vw;
+    /* height: 7vw; */
 }
 
 .oo-hero-header .oo-hero-trip-num p {
-    font-size: 1.5vw;
+    /* font-size: 1.5vw; */
 }
 
 .oo-hero-header .oo-hero-title p {
-    letter-spacing: -.2vw;
-    font-size: 4.5vw;
+    /* letter-spacing: -.2vw;
+    font-size: 4.5vw; */
 }
 
 .oo-info > div {
@@ -94,21 +94,21 @@ START : Content
     font-size: 2vh;
     /* line-height: 4vh; */
 
-    padding: 1vw 3vw;
+    /* padding: 1vw 3vw;
     font-size: 1.2vw;
-    line-height: 2.2vw;
+    line-height: 2.2vw; */
 }
 
 .oo-info .oo-site-number {
-    width: 2vw;
+    /* width: 2vw;
     height: 2vw;
-    line-height: 2vw;
+    line-height: 2vw; */
 }
 
 .oo-trip-desc {
-    padding: 2vw 8vw;
-    font-size: 1.2vw;
-    line-height: 2.2vw;
+    /* padding: 2vw 8vw; */
+    /* font-size: 1.2vw; */
+    /* line-height: 2.2vw; */
 }
 
 /*

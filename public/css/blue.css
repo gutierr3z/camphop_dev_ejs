@@ -90,44 +90,44 @@ START : Content
 /* Trip Page : -------------------- */
 
 .oo-hero {
-    height: 40vw;
-    max-height: 40vw;
+    /* height: 40vw; */
+    /* max-height: 40vw; */
 }
 
 .oo-hero-header .oo-hero-trip-num {
-    height: 10vw;
+    /* height: 10vw; */
 }
 
 .oo-hero-header .oo-hero-title {
-    height: 10vw;
+    /* height: 10vw; */
 }
 
 .oo-hero-header .oo-hero-trip-num p {
-    font-size: 2.5vw;
+    /* font-size: 2.5vw; */
 }
 
 .oo-hero-header .oo-hero-title p {
-    letter-spacing: -.3vw;
-    font-size: 6vw;
+    /* letter-spacing: -.3vw;
+    font-size: 6vw; */
 }
 
 .oo-info > div {
 
-    padding: 2vw 3vw;
+    /* padding: 2vw 3vw;
     font-size: 1.8vw;
-    line-height: 3.5vw;
+    line-height: 3.5vw; */
 }
 
 .oo-info .oo-site-number {
-    width: 2.5vw;
+    /* width: 2.5vw;
     height: 2.5vw;
-    line-height: 2.5vw;
+    line-height: 2.5vw; */
 }
 
 .oo-trip-desc {
-    padding: 4vw 5vw;
-    font-size: 1.8vw;
-    line-height: 3.5vw;
+    /* padding: 4vw 5vw; */
+    /* font-size: 1.8vw; */
+    /* line-height: 3.5vw; */
 }
 
 .oo-info > div:nth-child( odd ) {
