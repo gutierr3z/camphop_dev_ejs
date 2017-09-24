@@ -551,9 +551,7 @@ START : Footer
 
 footer {
     min-height: 150px;
-    
     display: flex;
-
     background: url( ../images/footer_trees.svg );
     background-color: #e8e8e8;
     background-size: 300px;
