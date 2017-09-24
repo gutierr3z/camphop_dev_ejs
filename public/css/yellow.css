@@ -350,6 +350,28 @@ START : Content
 
 /* Trip Page : -------------------- */
 
+.oo-hero-about {
+    height: 35vmax;
+    background-repeat: no-repeat;
+    background-position: left center;
+    background-size: cover;
+
+    position: relative;
+}
+
+.oo-hero-about .oo-hero-logo-night {
+    background: url( ../images/logo_night.svg );
+    /* background-color: #c0bdb5; */
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: 20vmax;
+    width: 20vmax;
+    height: 100%;
+
+    position: absolute;
+    top: 0px;
+    right: 10%;
+}
 .oo-hero {
     /* width: 100%; */
     /* height: 60vw; */
