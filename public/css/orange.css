@@ -54,11 +54,13 @@ START : Content
 }
 
 .oo-spot .oo-msg {
-    padding: 30px 18% 50px;
+    /* padding: 30px 18% 50px; */
+    padding: 7vh 15vw 8vh;
+    font-size: 5vh;
 }
 
 .oo-spot .oo-decoration {
-    height: 30vh;
+    height: 24vh;
 }
 
 .oo-gallery .row > a {
@@ -78,13 +80,47 @@ START : Content
 .oo-gallery .row > a .oo-pic-block p {
     padding-top: 2vh;
     padding-bottom: 2vh;
+    font-size: 3.5vh;
 }
 
 /* Trip Page : -------------------- */
 
 .oo-hero {
-    height: 48vh;
-    max-height: 48vh;
+    height: 45vh;
+    max-height: 45vh;
+}
+
+.oo-hero-header .oo-hero-title {
+    height: 10vh;
+}
+
+.oo-hero-header .oo-hero-title p {
+    padding-left: 2vw;
+    padding-right: 2vw;
+    font-size: 5vw;
+}
+
+.oo-hero-header .oo-hero-trip-num {
+    width: 7vw;
+    height: 10vh;
+}
+
+.oo-hero-header .oo-hero-trip-num p {
+    font-size: 2.5vw;
+}
+
+.oo-info > div {
+    padding: 3vh 3vh;
+    font-size: 3.5vh;
+    line-height: 4vh;
+}
+
+.oo-info > div:nth-child( odd ) {
+    /* flex-basis: 35%; */
+}
+
+.oo-info > div:nth-child( even ) {
+    /* flex-basis: 65%; */
 }
 
 /*
@@ -100,7 +136,9 @@ START : Footer
 
 /* /Overwrites : -------------------- */
 
-
+footer .oo-right-block {
+    font-size: 3.5vh;
+}
 
 /*
 END : Footer 

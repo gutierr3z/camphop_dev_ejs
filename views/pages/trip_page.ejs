@@ -18,21 +18,51 @@
             <div class="oo-hero" style="background-image: url( '../images/jumbo_<%= theTrip.tripNumber %>.jpg' );">
 
                 <div class="oo-hero-header">
-                    <div class="oo-hero-trip-num"><%= theTrip.tripNumber %></div>
-                    <div class="oo-hero-title"><%= theTrip.campgroundName %></div>
+                    <div class="oo-hero-trip-num"><p><%= theTrip.tripNumber %></p></div>
+                    <div class="oo-hero-title"><p><%= theTrip.campgroundName %></p></div>
                 </div>
                 
-                <h1><%= theTrip.campgroundName %></h1>
             </div>
 
+            <div class="oo-info">
 
-            <%= theTrip.arrivalDate + ' to ' + theTrip.departureDate %><br>
-            Site Number: <%= theTrip.siteNumber %><br>
-            <%= theTrip.latitude %>, <%= theTrip.longitude %><br>
-            address: <%= theTrip.campgroundAddress %><br>
-            phone: <%= theTrip.campgroundPhone %><br>
-            lati = <%= theTrip.latitude %><br>
-            long = <%= theTrip.longitude %>
+                <div>
+                    Stay
+                </div>
+                <div>
+                    <%= theTrip.arrivalDate %> to <%= theTrip.departureDate %>
+                </div>
+
+                <div>
+                    Camp Site Number
+                </div>
+                <div>
+                    <%= theTrip.siteNumber %>
+                </div>
+
+                <div>
+                    Coordinates
+                </div>
+                <div>
+                    <%= theTrip.latitude %>, <%= theTrip.longitude %>
+                </div>
+
+                <div>
+                    Camp Address
+                </div>
+                <div>
+                    <%= theTrip.campgroundAddress %>
+                </div>
+
+                <div>
+                    Camp Phone
+                </div>
+                <div>
+                    <%= theTrip.campgroundPhone %>
+                </div>
+
+            </div>
+
 
             <div id="oo-map"></div>
 

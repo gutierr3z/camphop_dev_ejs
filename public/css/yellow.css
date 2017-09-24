@@ -70,6 +70,9 @@ START : Header
     border-radius: 0px;
     border: 0px;
     margin-bottom: 0px;
+
+    font-family: 'Roboto Condensed', sans-serif;
+    letter-spacing: -.03em;
 }
 
 .navbar-default .navbar-nav > li > a {
@@ -78,7 +81,7 @@ START : Header
 }
 
 .navbar-nav {
-    margin: 0px;
+    /* margin: 0px; */
 }
 
 .navbar-nav > li {
@@ -211,7 +214,7 @@ START : Content
 }
 
 .oo-spot .oo-decoration {
-    height: 18vh;
+    height: 20vh;
     background-color: #f5df72;
     background: url( ../images/decoration-trees.jpg ) center center no-repeat;
     background-size: cover;
@@ -221,11 +224,15 @@ START : Content
 .oo-spot .oo-msg {
     background-color: #b6b3a8;
     text-align: center;
-    padding: 30px 10% 40px;
+    /* padding: 30px 10% 40px; */
+    padding: 5vh 10vw 6vh;
     color: #fff;
     letter-spacing: -.03em;
-    font-size: 1.3125em;
+    /* font-size: 1.375em; */
+    font-size: 4vh;
     line-height: 1.20em;
+    /* font-family: 'Open Sans Condensed', sans-serif; */
+    font-family: 'Roboto Condensed', sans-serif;
 }
 
 .oo-gallery {
@@ -270,6 +277,8 @@ START : Content
     background-color: #fed230;
     text-align: center;
     color: #000;
+    font-family: 'Roboto Condensed', sans-serif;
+    letter-spacing: -.03em;
 }
 
 .oo-gallery .row > a .oo-pic-block {
@@ -286,13 +295,16 @@ START : Content
     background-color: rgba( 0, 0, 0, .5 );
     padding: 0px 15px;
     color: #fff;
+    font-family: 'Roboto Condensed', sans-serif;
+    letter-spacing: -.03em;
 }
 
 .oo-gallery .row > a .oo-num-block p,
 .oo-gallery .row > a .oo-pic-block p {
     padding: 1.5vh 0px;
     line-height: 1.25em;
-    font-size: 0.875em;
+    /* font-size: 0.875em; */
+    font-size: 2.2vh;
 }
 
 .oo-gallery .row > a .oo-pic-block p {
@@ -303,13 +315,14 @@ START : Content
 
 .oo-hero {
     width: 100%;
-    height: 48vh;
-    max-height: 48vh;
+    height: 40vh;
+    max-height: 40vh;
 
     background-repeat: no-repeat;
     background-position: center center;
     background-size: cover;
     position: relative;
+    display: flex;
 }
 
 .oo-hero-header {
@@ -322,14 +335,53 @@ START : Content
     padding: 1.5vh 0px;
     line-height: 1.25em;
     font-size: 0.875em;
+    /* font-size: 2.5vh; */
+    /* font-size: 4vh; */
+    font-family: 'Roboto Condensed', sans-serif;
+    letter-spacing: -.03em;
+
+    align-self: center;
+    
+}
+
+.oo-hero-header .oo-hero-title {
+    display: flex;
+    background-color: rgba( 0, 0, 0, 0.5 );
+    height: 8vh;
+}
+
+.oo-hero-header .oo-hero-title p {
+    font-family: 'Amatic SC', cursive;
+    letter-spacing: -.5vh;
+    text-shadow: 1px 1px rgba( 0, 0, 0, 0.5 );
+    color: #fff;
+    margin: 0px;
+    padding: 0px;
+    align-self: center;
+    
+    font-size: 12vw;
+    padding-left: 2vw;
+    padding-right: 3vw;
 }
 
 .oo-hero-header .oo-hero-trip-num {
-    padding: 0px;
+    /* padding: 0px; */
     margin: 0px;
     background-color: #fed230;
     text-align: center;
     color: #000;
+    display: flex;
+
+    
+    width: 6vh;
+    height: 8vh;
+}
+
+.oo-hero-header .oo-hero-trip-num p {
+    font-size: 5vw;
+    padding: 0px;
+    margin: 0px auto;
+    align-self: center;
 }
 
 .oo-hero h1 {
@@ -341,6 +393,40 @@ START : Content
     padding: 0px;
     padding-top: 1vh;
     text-shadow: 1px 1px rgba( 0, 0, 0, 0.5 );
+}
+
+.oo-info {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.oo-info > div {
+    flex: 0 0 50%;
+    color: #fff;
+    padding: 3vh 6vh;
+    border-bottom: 1px solid #a6a191;
+
+    font-family: 'Roboto Condensed', sans-serif;
+    letter-spacing: -.03em;
+    padding: 1.5vh 3vh;
+    font-size: 2vh;
+    line-height: 3vh;
+}
+
+.oo-info > div:nth-child( odd ) {
+    color: #7e7b72;
+    text-align: right;
+    background-color: #d3d0c5;
+    border-bottom: 1px solid #bdbaad;
+    flex-basis: 35%;
+}
+
+.oo-info > div:nth-child( even ) {
+    color: #7e7b72;
+    background-color: #f0eee5;
+    border-bottom: 1px solid #d3d0c5;
+    flex-basis: 65%;
 }
 
 #oo-map {
@@ -386,7 +472,10 @@ footer .oo-left-block {
 footer .oo-right-block {
     align-self: center;
     padding-left: 15px;
-    font-size: 0.875em;
+    font-size: 2.5vh;
+
+    font-family: 'Roboto Condensed', sans-serif;
+    letter-spacing: -.03em;
 }
 
 footer .oo-left-block {
@@ -397,6 +486,8 @@ footer .oo-left-block {
     background-repeat: no-repeat;
     background-position: center center;
     background-size: 80%;
+
+    
 }
 
 /*

@@ -64,34 +64,37 @@ START : Header
 
 /* LIs */
 #oo-nav {
-    margin-top: 5px;
+    /* margin-top: 5px; */
+    min-height: 70px;
 }
 
 .navbar-nav > li {
     border: 0px;
+    border-left: 1px solid #d3d0c5;
+    
 }
 
 .navbar-default .navbar-nav > li > a {
-    color: #000;
+    color: #db0000;
+    min-height: 70px;
 }
 
+.navbar-default .navbar-nav > li > a:hover,
 .navbar-default .navbar-nav > li > a {
+    padding: 25px 50px;
     font-size: 1em;
+    color: #db0000;
 }
 
 .navbar-nav > li > a {
-    padding-left: 7px;
-}
-
-.navbar-nav > li > a {
-    padding-top: 11px;
-    padding-bottom: 11px;
+    /* padding-top: 11px; */
+    /* padding-bottom: 11px; */
 }
 
 /* /Navigation : -------------------- */
 
 .oo-header .oo-center-content {
-    margin-top: 9px;
+    /* margin-top: 9px; */
 }
 
 a.oo-brand {
@@ -121,16 +124,20 @@ START : Content
 }
 
 .oo-spot .oo-msg {
-    font-size: 2em;
+    /* font-size: 2em; */
+    /* font-size: 2.375em; */
     line-height: 1.20em;
+    font-size: 4vh;
 }
 
 .oo-spot .oo-decoration {
-    height: 20vh;
+    /* height: 20vh; */
 }
 
 .oo-spot .oo-msg {
-    padding: 35px 20% 45px;
+    /* padding: 35px 20% 45px; */
+    /* padding: 7vh 15vw 8vh; */
+    padding: 5vh 15vw 6vh;
 }
 
 .oo-gallery {
@@ -151,8 +158,41 @@ START : Content
 /* Trip Page : -------------------- */
 
 .oo-hero {
-    height: 50vh;
-    max-height: 50vh;
+    /* height: 50vh; */
+    /* max-height: 50vh; */
+}
+
+.oo-hero-header .oo-hero-title {
+    height: 9vh;
+}
+
+.oo-hero-header .oo-hero-title p {
+    padding-left: 2vw;
+    padding-right: 2vw;
+    font-size: 9vw;
+}
+
+.oo-hero-header .oo-hero-trip-num {
+    width: 9vw;
+    height: 9vh;
+}
+
+.oo-hero-header .oo-hero-trip-num p {
+    font-size: 4vw;
+}
+
+.oo-info > div {
+    padding: 1vh 3vh;
+    font-size: 1.7vh;
+    line-height: 4vh;
+}
+
+.oo-info > div:nth-child( odd ) {
+    flex-basis: 30%;
+}
+
+.oo-info > div:nth-child( even ) {
+    flex-basis: 70%;
 }
 
 /*
