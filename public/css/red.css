@@ -93,6 +93,12 @@ START : Content
     line-height: 2.2vw;
 }
 
+.oo-info .oo-site-number {
+    width: 2vw;
+    height: 2vw;
+    line-height: 2vw;
+}
+
 .oo-trip-desc {
     padding: 2vw 8vw;
     font-size: 1.2vw;
