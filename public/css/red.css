@@ -90,8 +90,8 @@ START : Content
 }
 
 .oo-info > div {
-    padding: 2vh 3vh;
-    font-size: 2vh;
+    /* padding: 2vh 3vh;
+    font-size: 2vh; */
     /* line-height: 4vh; */
 
     /* padding: 1vw 3vw;
