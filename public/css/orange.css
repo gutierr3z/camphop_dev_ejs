@@ -111,6 +111,7 @@ START : Content
 .oo-hero-header .oo-hero-title {
     /* height: 10vh; */
 
+    
     /* height: 10vw; */
     flex-basis: 85%;
 }
