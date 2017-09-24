@@ -173,23 +173,22 @@ START : Content
     max-height: 45vw;
 }
 
+.oo-hero-header .oo-hero-trip-num {
+    height: 12vw;
+}
+
 .oo-hero-header .oo-hero-title {
-    height: 9vh;
+    height: 12vw;
+}
+
+.oo-hero-header .oo-hero-trip-num p {
+    font-size: 4vw;
 }
 
 .oo-hero-header .oo-hero-title p {
     padding-left: 2vw;
     padding-right: 2vw;
     font-size: 9vw;
-}
-
-.oo-hero-header .oo-hero-trip-num {
-    width: 9vw;
-    height: 9vh;
-}
-
-.oo-hero-header .oo-hero-trip-num p {
-    font-size: 4vw;
 }
 
 .oo-info > div {

@@ -66,6 +66,24 @@ START : Content
     max-height: 30vw;
 }
 
+.oo-hero-header .oo-hero-trip-num {
+    height: 7vw;
+}
+
+.oo-hero-header .oo-hero-title {
+    height: 7vw;
+}
+
+.oo-hero-header .oo-hero-trip-num p {
+    font-size: 3.5vh;
+}
+
+.oo-hero-header .oo-hero-title p {
+    padding-left: 2vw;
+    padding-right: 3vw;
+    font-size: 7.5vh;
+}
+
 .oo-info > div {
     padding: 2vh 3vh;
     font-size: 2vh;

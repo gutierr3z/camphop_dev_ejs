@@ -90,23 +90,28 @@ START : Content
     max-height: 30vw;
 }
 
+.oo-hero-header .oo-hero-trip-num {
+    /* height: 10vh; */
+
+    height: 10vw;
+    flex-basis: 15%;
+}
+
 .oo-hero-header .oo-hero-title {
-    height: 10vh;
+    /* height: 10vh; */
+
+    height: 10vw;
+    flex-basis: 85%;
+}
+
+.oo-hero-header .oo-hero-trip-num p {
+    font-size: 2.5vw;
 }
 
 .oo-hero-header .oo-hero-title p {
     padding-left: 2vw;
     padding-right: 2vw;
     font-size: 5vw;
-}
-
-.oo-hero-header .oo-hero-trip-num {
-    width: 7vw;
-    height: 10vh;
-}
-
-.oo-hero-header .oo-hero-trip-num p {
-    font-size: 2.5vw;
 }
 
 .oo-info > div {
