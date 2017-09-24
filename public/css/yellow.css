@@ -202,19 +202,52 @@ START : Content
     background-color: #eae9e4;
 }
 
+
+
 .oo-spot .oo-full-logo {
     text-align: center;
     padding: 30px;
     background: url( ../images/logo.svg );
     background-repeat: no-repeat;
     background-position: center center;
-    background-size: 48vh;
-    height: 30vh;
-    max-height: 30vh;
+    /* background-size: 85vw; */
+    background-size: 47vmax;
+    /* height: 60vw; */
+    height: 28vmax;
+    /* max-height: 60vw; */
+
+    position: relative;
+}
+
+.oo-spot .oo-full-logo .oo-leaves-left {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    background: url( ../images/leaves_left.png );
+    background-repeat: no-repeat;
+    background-position: -15vmax top;
+    background-size: 21vmax;
+    width: 20vmax;
+    height: 100%;
+    /* border: 2px solid blue; */
+}
+
+.oo-spot .oo-full-logo .oo-leaves-right {
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    background: url( ../images/leaves_right.png );
+    background-repeat: no-repeat;
+    background-position: 16vmax top;
+    background-size: 21vmax;
+    width: 20vmax;
+    height: 100%;
+    /* border: 2px solid blue; */
 }
 
 .oo-spot .oo-decoration {
-    height: 20vh;
+    /* height: 36vw; */
+    height: 15vmax;
     
     background: url( ../images/decoration-trees.jpg ) center center no-repeat;
     background-size: cover;
@@ -226,12 +259,15 @@ START : Content
     background-color: #b6b3a8;
     text-align: center;
     /* padding: 30px 10% 40px; */
-    padding: 5vh 10vw 6vh;
+    /* padding: 5vh 10vw 6vh; */
+    padding: 4vmax 5vmax;
     color: #fff;
     letter-spacing: -.03em;
     /* font-size: 1.375em; */
-    font-size: 4vh;
-    line-height: 1.20em;
+    /* font-size: 4vh; */
+    font-size: 3vmax;
+    /* line-height: 1.20em; */
+    line-height: 3.5vmax;
     /* font-family: 'Open Sans Condensed', sans-serif; */
     font-family: 'Roboto Condensed', sans-serif;
 }
@@ -413,7 +449,6 @@ START : Content
     padding: 3vh 6vh;
     border-bottom: 1px solid #a6a191;
     font-family: 'Roboto Condensed', sans-serif;
-
     letter-spacing: -.03em;
     padding: 3vw 3vw;
     font-size: 4vw;
@@ -432,6 +467,7 @@ START : Content
 }
 
 .oo-trip-desc {
+    font-family: 'Roboto Condensed', sans-serif;
     letter-spacing: -.03em;
     padding: 6vw;
     font-size: 4vw;

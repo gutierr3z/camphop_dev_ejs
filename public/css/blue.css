@@ -48,20 +48,31 @@ START : Content
 /* /Overwrites : -------------------- */
 
 .oo-spot .oo-full-logo {
-    background-size: 52vh;
-    height: 35vh;
-    max-height: 35vh;
+    /* background-size: 40vw;
+    height: 26vw;
+    max-height: 26vw; */
+
+    /* background-size: 45vmax;
+    height: 30vmax; */
 }
 
 .oo-spot .oo-decoration {
-    /* height: 26vh; */
+    /* height: 15vw; */
+}
+
+.oo-spot .oo-full-logo .oo-leaves-left {
+    background-position: -5vmax top;
+}
+
+.oo-spot .oo-full-logo .oo-leaves-right {
+    background-position: 5vmax top;
 }
 
 .oo-spot .oo-msg {
     /* padding: 30px 18% 50px; */
     /* padding: 5vh 15vw 6vh; */
     /* font-size: 3em; */
-    font-size: 4vh;
+    /* font-size: 4vh; */
 }
 
 .oo-gallery {
