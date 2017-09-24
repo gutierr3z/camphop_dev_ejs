@@ -364,13 +364,25 @@ START : Content
     /* background-color: #c0bdb5; */
     background-repeat: no-repeat;
     background-position: center center;
-    background-size: 20vmax;
+    background-size: 18vmax;
     width: 20vmax;
-    height: 100%;
+    height: 40%;
 
     position: absolute;
     top: 0px;
-    right: 10%;
+    right: 5%;
+}
+
+.oo-about-copy {
+    font-family: 'Roboto Condensed', sans-serif;
+    letter-spacing: -.03em;
+
+    padding: 4vmax;
+    font-size: 2.3vmax;
+    line-height: 3vmax;
+
+    color: #7e7b72;
+    background-color: #eae9e4;
 }
 .oo-hero {
     /* width: 100%; */
