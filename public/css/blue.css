@@ -79,8 +79,8 @@ START : Content
 /* Trip Page : -------------------- */
 
 .oo-hero {
-    height: 50vh;
-    max-height: 50vh;
+    height: 40vw;
+    max-height: 40vw;
 }
 
 .oo-hero-header .oo-hero-title {
