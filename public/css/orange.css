@@ -111,7 +111,7 @@ START : Content
 .oo-hero-header .oo-hero-title {
     /* height: 10vh; */
 
-    
+
     /* height: 10vw; */
     flex-basis: 85%;
 }
@@ -149,6 +149,10 @@ START : Content
 
 .oo-info > div:nth-child( even ) {
     /* flex-basis: 65%; */
+}
+
+.oo-gallery-flex > div {
+    flex-basis: 32.33%;
 }
 
 /*

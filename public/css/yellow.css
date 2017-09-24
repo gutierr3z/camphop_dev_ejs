@@ -512,6 +512,23 @@ START : Content
     height: 40vmax;
 }
 
+
+.oo-gallery-flex {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: stretch;
+    margin-top: 1vmax;
+}
+
+.oo-gallery-flex > div {
+    background-color: #eae9e4;
+    margin-bottom: 1vmax;
+    height: 20vmax;
+    font-size: 2vmax;
+    flex-basis: 49%;
+}
+
 /* /Trip Page : -------------------- */
 
 /*
