@@ -173,6 +173,7 @@ START : Content
 
 .oo-hero {
     /* height: 45vw; */
+    height: 35vh;
 }
 
 .oo-hero-header .oo-hero-trip-num {
